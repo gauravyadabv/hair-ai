@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>Keshara Trichology</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary": "#426654", "on-error-container": "#93000a", "surface-container-low": "#f5f4ef", "on-tertiary-fixed": "#271900", "tertiary": "#2e1e00", "secondary-fixed-dim": "#a9cfba", "surface-container-lowest": "#ffffff", "primary": "#00271d", "on-secondary-fixed-variant": "#2b4e3e", "on-tertiary-container": "#b89b69", "outline-variant": "#c1c8c3", "on-primary-fixed-variant": "#2a4d42", "on-secondary": "#ffffff", "on-secondary-container": "#486c5a", "surface-bright": "#faf9f4", "on-secondary-fixed": "#002114", "primary-fixed": "#c4ebdb", "tertiary-fixed-dim": "#e2c28d", "surface-tint": "#426559", "primary-fixed-dim": "#a8cfbf", "secondary-container": "#c4ecd6", "on-surface-variant": "#414845", "on-tertiary": "#ffffff", "tertiary-fixed": "#ffdea8", "background": "#faf9f4", "on-tertiary-fixed-variant": "#59431a", "surface-container-high": "#e9e8e3", "on-primary-container": "#82a899", "surface-dim": "#dbdad5", "surface-container": "#efeee9", "error-container": "#ffdad6", "on-surface": "#1b1c19", "on-error": "#ffffff", "inverse-primary": "#a8cfbf", "error": "#ba1a1a", "inverse-surface": "#30312e", "inverse-on-surface": "#f2f1ec", "on-background": "#1b1c19", "on-primary": "#ffffff", "outline": "#717975", "on-primary-fixed": "#002118", "primary-container": "#193d32", "surface-variant": "#e3e3de", "surface": "#faf9f4", "surface-container-highest": "#e3e3de", "secondary-fixed": "#c4ecd6", "tertiary-container": "#47330a" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin": "1.5rem", "space-md": "1rem", "margin-lg": "4rem", "space-xs": "0.25rem", "gutter-lg": "2rem", "space-lg": "1.5rem", "gutter-sm": "1rem", "margin-md": "2.5rem" }, fontFamily: { "title-lg": ["Inter"], "headline-lg-mobile": ["Playfair Display"], "body-lg": ["Inter"], "headline-lg": ["Playfair Display"], "label-lg": ["Inter"], "label-md": ["Inter"], "display": ["Playfair Display"], "body-md": ["Inter"], "label-sm": ["Inter"], "metric-val": ["Inter"], "headline-sm": ["Playfair Display"], "title-md": ["Inter"], "body-sm": ["Inter"], "display-mobile": ["Playfair Display"], "headline-md": ["Playfair Display"] }, fontSize: { "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "label-lg": ["13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" }], "label-md": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" }], "metric-val": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.03em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "display-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }] } } } };
+</script>
+<style>
+@layer base {
+  html,body { width:100%; margin:0; padding:0; min-height:100%; background-color:#faf9f4; }
+  body { overscroll-behavior-y:none; -webkit-tap-highlight-color:transparent; }
+  .pb-safe { padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem); }
+  .pt-safe { padding-top:env(safe-area-inset-top,0px); }
+  main>:first-child { margin-top:0!important; }
+  main>:last-child { margin-bottom:0!important; }
+}
+::-webkit-scrollbar { display:none; }
+body { min-height: max(884px, 100dvh); }
+.tab-view { display: none; }
+.tab-view.active { display: block; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen">
+<!-- SHARED HEADER -->
+<header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(25,61,50,0.03)]">
+  <div class="h-16 px-gutter flex items-center justify-between gap-space-sm">
+    <div class="flex items-center gap-space-sm">
+      <div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-tertiary-fixed shadow-[0_1px_3px_rgba(25,61,50,0.08)]">
+        <span class="material-symbols-outlined text-[20px]">spa</span>
+      </div>
+      <div class="flex flex-col">
+        <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Keshara Trichology</span>
+        <h1 class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight" id="header-title">Overview</h1>
+      </div>
+    </div>
+    <div class="flex items-center gap-space-xs">
+      <button aria-label="Notifications" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[22px]">notifications</span>
+      </button>
+      <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_3px_rgba(0,39,29,0.12)]">
+        <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- MAIN CONTENT -->
+<main class="w-full pt-16 pb-28 bg-surface min-h-screen">
+
+<!-- ==================== TAB 1: OVERVIEW ==================== -->
+<section class="tab-view active px-4 py-4 space-y-5 max-w-lg mx-auto" id="view-overview">
+  <!-- Greeting Banner -->
+  <div class="flex items-center justify-between border-b border-[#E5E3DC] pb-3">
+    <div>
+      <span class="text-[10px] font-semibold uppercase tracking-wider text-[#426654] inline-flex items-center gap-1">
+        <span class="material-symbols-outlined text-[13px]">verified</span> Member #KSH-4091
+      </span>
+      <h1 class="text-2xl font-serif font-bold text-[#193D32] mt-0.5">Namaste, Aaradhya</h1>
+      <p class="text-xs text-[#426654]/80 mt-0.5">Follicular Anagen Phase Re-alignment (Week 6)</p>
+    </div>
+    <div class="text-right">
+      <span class="text-[10px] uppercase font-bold text-[#C6A875] tracking-wider block">Scalp Index</span>
+      <span class="text-xl font-bold font-serif text-[#193D32]">78<span class="text-xs text-[#426654] font-sans">/100</span></span>
+    </div>
+  </div>
+  <!-- Clinical Diagnostic Hero Card -->
+  <div class="rounded-2xl bg-[#193D32] text-[#FAF9F4] p-5 shadow-sm relative overflow-hidden">
+    <div class="relative z-10 space-y-3">
+      <div class="flex items-center justify-between text-xs">
+        <span class="px-2 py-0.5 rounded-full bg-[#FAF9F4]/10 text-[#C6A875] font-semibold tracking-wide text-[10px] uppercase">Validated Diagnostic</span>
+        <span class="text-[#FAF9F4]/70 text-[11px]">Nov 14, 2024</span>
+      </div>
+      <div>
+        <h2 class="text-lg font-serif font-bold tracking-tight">Scalp &amp; Follicle Analysis</h2>
+        <p class="text-xs text-[#FAF9F4]/80 mt-1 leading-relaxed">Mild sebum variance localized at Vertex; Anagen stability index optimal. Follicular density improved by +12% since Day 1 baseline.</p>
+      </div>
+      <div class="pt-2 flex items-center justify-between gap-3">
+        <button class="flex-1 py-2.5 px-3 rounded-xl bg-[#FAF9F4] text-[#193D32] font-semibold text-xs flex items-center justify-center gap-1.5 shadow-sm hover:bg-[#FAF9F4]/95 transition-transform active:scale-[0.98]" onclick="openReportModal()">
+          <span>View Clinical Report (12 Sec)</span>
+          <span class="material-symbols-outlined text-[15px]">arrow_outward</span>
+        </button>
+        <div class="text-right px-2">
+          <span class="text-[10px] text-[#FAF9F4]/60 uppercase block">Next Scan</span>
+          <span class="text-xs font-semibold text-[#C6A875]">Nov 28</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 5-Angle Scalp Calibration -->
+  <div class="rounded-2xl bg-[#F4F3EE] border border-[#E5E3DC] p-4 space-y-3">
+    <div class="flex items-center justify-between">
+      <div>
+        <span class="text-[10px] uppercase font-bold tracking-wider text-[#426654]">Trichological Imaging</span>
+        <h3 class="text-sm font-semibold text-[#193D32]">5-Angle Scalp Calibration</h3>
+      </div>
+      <span class="px-2 py-0.5 rounded-full bg-[#426654]/10 text-[#426654] text-[11px] font-semibold flex items-center gap-1">
+        <span class="material-symbols-outlined text-[13px]">check_circle</span> 5/5 Calibrated
+      </span>
+    </div>
+    <p class="text-[11px] text-[#426654]/80 leading-normal">Tap any vantage point below to inspect calibrated micro-density dermoscopy.</p>
+    <div class="grid grid-cols-5 gap-2 pt-1">
+      <div class="cursor-pointer group flex flex-col items-center gap-1" onclick="openInspectorModal(0)">
+        <div class="relative w-full aspect-square rounded-xl overflow-hidden border border-[#E5E3DC] bg-[#FAF9F4] shadow-sm">
+          <img alt="Front" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwQHebG91sLjcvCaEyhOGY8LvsN4KVPCMDEIiXY5-PM9X02QN5VcF_iVXCo1_LIrv9jnzyOSrkgC08iriUaBXPzfZHLuRhiZgUsSlaIALweprIc3W891iQ7t8t3tYV1TD6bAj0Z4rct2Us-QENYKiWW2SfKySkp6_8uJk4Ax3zJB_s--gDZWvKzgJmFTOUmaSo07uzbWgHB4iY_aEkH23S2qQ3OmYus1a6GQ2SZJE">
+          <span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-[#426654] text-white flex items-center justify-center text-[9px] material-symbols-outlined">check</span>
+        </div>
+        <span class="text-[10px] font-medium text-[#193D32]">Front</span>
+      </div>
+      <div class="cursor-pointer group flex flex-col items-center gap-1" onclick="openInspectorModal(1)">
+        <div class="relative w-full aspect-square rounded-xl overflow-hidden border border-[#E5E3DC] bg-[#FAF9F4] shadow-sm">
+          <img alt="Top" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwxS8E9gIwIMkP13ToUlbhrruYbRlE7WUfxTZPgNlDOE1e7Mug11g24QQKuP-3hDbhFjDRjAESANTByFJfr-eQLzGZjhf_VwEMSyr0WHlp_ghskvKafNFydc6S_SkOfNT6zt-lpKd-glz7sXRvbpagjS3984lqf5CXgqJFVmhJYRNw7r0SJDwenWoDUMlgmtHSZGKgVPYQe7UIAjUZMrih6miWQ0QpPNQWWlv2tms">
+          <span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-[#426654] text-white flex items-center justify-center text-[9px] material-symbols-outlined">check</span>
+        </div>
+        <span class="text-[10px] font-medium text-[#193D32]">Top</span>
+      </div>
+      <div class="cursor-pointer group flex flex-col items-center gap-1" onclick="openInspectorModal(2)">
+        <div class="relative w-full aspect-square rounded-xl overflow-hidden border border-[#E5E3DC] bg-[#FAF9F4] shadow-sm">
+          <img alt="Crown" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo87PIwLRE23Dvf9eD1QgfNSERkcaEhY2cvatRsaK6Lo5Ra6Q9uWrHU4qa7ho3a_6oIWL4nhfj22msOAB7tWaN1oc5AjPEbJ9Ed44xU-cKfLnh3PJfZ8QTMMOjlsKOEqdm25R29-Ypp7hCYkEOgHcQ-V2X9VUwakLmqFi3xt6BeZA-OG8iE3-dFmHlX_KXzNGNPjXMTCVTAWNnnMTqoQQtpDn8MOHdCSYO2B55KUc">
+          <span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-[#426654] text-white flex items-center justify-center text-[9px] material-symbols-outlined">check</span>
+        </div>
+        <span class="text-[10px] font-medium text-[#193D32]">Crown</span>
+      </div>
+      <div class="cursor-pointer group flex flex-col items-center gap-1" onclick="openInspectorModal(3)">
+        <div class="relative w-full aspect-square rounded-xl overflow-hidden border border-[#E5E3DC] bg-[#FAF9F4] shadow-sm">
+          <img alt="Left" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbZXQzOt2XLj0U0W4OhoQqtSrXLV82nMXT-GZQRR1t-Rexf3nkWtmzNsQZdqL6QGdZbNPww2J4iE1qgTXGB0BfT-9banOg5DNurS86joeXg0dly295dBFFkFFz3KGA3dwAIW37USzBV8MONdC2CyoGJOkVxqx1eXFuslwPwcuq5DTbqcMkYwe5Q8KHSS09aUmiQKdTTOePR7UDRQJPTxC9WAx6NkcW_jz5BK3kOnA">
+          <span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-[#426654] text-white flex items-center justify-center text-[9px] material-symbols-outlined">check</span>
+        </div>
+        <span class="text-[10px] font-medium text-[#193D32]">L. Temple</span>
+      </div>
+      <div class="cursor-pointer group flex flex-col items-center gap-1" onclick="openInspectorModal(4)">
+        <div class="relative w-full aspect-square rounded-xl overflow-hidden border border-[#E5E3DC] bg-[#FAF9F4] shadow-sm">
+          <img alt="Right" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADJs8xtyjqGNbzIu_f-uQN-OovM2ts93tDNlTcTO8ykH13cuHpvz1UvPN3uLpAVdzImb5qvmqJIROaToR-URHPWPcX-1KcFV8ilqfITubLiVduXn3zs2voPsm5AA_74ezy_5qIxAB1TpO05qTpQrbLc2aVbPbZRN61c9dtSwOENGEcFle8kZ4gHXQ5hIrCPzKFOFLq3ug8ki5WSNOZgHV7PqClDmDMo2-L3Ak1FdY">
+          <span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-[#426654] text-white flex items-center justify-center text-[9px] material-symbols-outlined">check</span>
+        </div>
+        <span class="text-[10px] font-medium text-[#193D32]">R. Temple</span>
+      </div>
+    </div>
+  </div>
+  <!-- Daily Protocol Tracker -->
+  <div class="rounded-2xl bg-[#FAF9F4] border border-[#E5E3DC] p-4 space-y-3">
+    <div class="flex items-center justify-between">
+      <div>
+        <span class="text-[10px] uppercase font-bold tracking-wider text-[#426654]">Daily Protocol</span>
+        <h3 class="text-sm font-semibold text-[#193D32]">Week 6 of 12</h3>
+      </div>
+      <div class="text-right">
+        <span class="text-xs font-bold text-[#193D32]" id="regimen-completion-text">33%</span>
+        <span class="text-[10px] text-[#426654] block">Completed</span>
+      </div>
+    </div>
+    <div class="w-full bg-[#E5E3DC] h-1.5 rounded-full overflow-hidden">
+      <div class="bg-[#426654] h-full transition-all duration-300" id="regimen-progress-bar" style="width: 33%;"></div>
+    </div>
+    <div class="space-y-2 pt-1">
+      <!-- Task 1 -->
+      <div class="cursor-pointer p-3 rounded-xl bg-[#F4F3EE] border border-[#E5E3DC] flex items-center justify-between transition-colors" onclick="toggleTask(0)">
+        <div class="flex items-center gap-3">
+          <div class="w-5 h-5 rounded-md bg-[#193D32] text-white flex items-center justify-center text-[14px] material-symbols-outlined" id="task-check-0">check</div>
+          <div>
+            <p class="text-xs font-semibold text-[#426654] line-through" id="task-title-0">Rosemary &amp; Bhringraj Serum</p>
+            <p class="text-[10px] text-[#426654]/80">Morning • 1.5 ml applied to vertex</p>
+          </div>
+        </div>
+        <span class="text-[10px] font-medium text-[#426654]" id="task-status-0">Done</span>
+      </div>
+      <!-- Task 2 -->
+      <div class="cursor-pointer p-3 rounded-xl bg-[#FAF9F4] border border-[#E5E3DC] flex items-center justify-between transition-colors" onclick="toggleTask(1)">
+        <div class="flex items-center gap-3">
+          <div class="w-5 h-5 rounded-md border border-[#C6A875] flex items-center justify-center text-[14px] material-symbols-outlined text-transparent" id="task-check-1">check</div>
+          <div>
+            <p class="text-xs font-semibold text-[#193D32]" id="task-title-1">Botanical Kansa Wand Massage</p>
+            <p class="text-[10px] text-[#426654]/80">Evening • 7-min scalp stimulation</p>
+          </div>
+        </div>
+        <span class="text-[10px] font-medium text-[#C6A875]" id="task-status-1">Pending</span>
+      </div>
+      <!-- Hydration -->
+      <div class="p-3 rounded-xl bg-[#F4F3EE] border border-[#E5E3DC] flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-5 h-5 rounded-md bg-[#193D32] text-white flex items-center justify-center text-[14px] material-symbols-outlined">water_drop</div>
+          <div>
+            <p class="text-xs font-semibold text-[#193D32]">Target Hydration</p>
+            <p class="text-[10px] text-[#426654]/80">Electrolytes &amp; herb-infused water</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="w-6 h-6 rounded-full bg-[#E5E3DC] text-[#193D32] text-xs font-bold flex items-center justify-center" onclick="changeHydration(-0.25)">-</button>
+          <span class="text-xs font-bold text-[#193D32] min-w-[48px] text-center" id="water-val">1.75 L</span>
+          <button class="w-6 h-6 rounded-full bg-[#193D32] text-white text-xs font-bold flex items-center justify-center" onclick="changeHydration(0.25)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TAB 2: HAIR TEST ==================== -->
+<section class="tab-view px-0 py-0" id="view-hair-test">
+  <div class="flex flex-col w-full pb-8">
+    <!-- Stepper & Progress Header -->
+    <section class="px-gutter pt-space-md pb-space-sm flex flex-col gap-space-sm bg-surface">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-space-xs">
+          <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          <span class="font-label-md text-label-md uppercase text-secondary">Step 3 of 6 • Scalp Condition</span>
+        </div>
+        <div class="flex items-center gap-space-sm">
+          <span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">hourglass_empty</span> ~3 mins
+          </span>
+          <button class="font-label-md text-label-md text-primary px-space-sm py-1 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors">Save &amp; Exit</button>
+        </div>
+      </div>
+      <div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+        <div class="bg-primary h-full rounded-full" style="width:50%;"></div>
+      </div>
+      <div class="pt-space-xs">
+        <h2 class="font-headline-md text-headline-md text-primary leading-tight">Trichological Diagnostic Profile</h2>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-relaxed">Map your follicular symptoms and biochemical stressors to synthesize an Ayurvedic-botanical prescription.</p>
+      </div>
+    </section>
+    <!-- Editorial Hero Image -->
+    <section class="px-gutter my-space-sm">
+      <div class="relative w-full h-36 rounded-xl overflow-hidden shadow-sm bg-surface-container-low">
+        <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh7SNAVWRjJSOIenpyhIcdgi0S053A9NlCopFC_4tEvhcfdgh_1nhRe0ElUqYDQqo-FfTpYLMEDQMsnZyGMUqfz4QiAqd494Q_yu52Hu1IrN4QsfFpMGQwSTxKm62sSIlBoFhjzy74fY8QMKyp3FrExC5KRLuXzX7LCihRvb7zWEhBaH53ylQnssHzsXMfr6cssTeI6BsyaQLO4ila3J57LzyoPjKBPLF-g5Tza70" alt="Botanical trichology macro"/>
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-md">
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-fixed">Follicular Health Diagnostic</span>
+          <p class="font-headline-sm text-headline-sm text-on-primary font-normal leading-snug">Precision Assessment</p>
+        </div>
+      </div>
+    </section>
+    <!-- Section 1: Primary Hair Concerns -->
+    <section class="px-gutter mt-space-md flex flex-col gap-space-sm">
+      <div class="flex items-baseline justify-between">
+        <h3 class="font-title-md text-title-md text-primary">1. Primary Hair Concerns</h3>
+        <span class="font-label-sm text-label-sm text-on-surface-variant">Select all that apply</span>
+      </div>
+      <div class="grid grid-cols-2 gap-space-sm" id="concerns-grid">
+        <button class="selectable-card p-space-md rounded-xl bg-surface-container text-left flex flex-col justify-between gap-space-sm transition-all shadow-sm" type="button">
+          <div class="flex items-center justify-between">
+            <span class="material-symbols-outlined text-[20px] text-secondary">waves</span>
+            <span class="indicator-icon w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center text-[10px]"></span>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface leading-tight">Excessive Shedding</h4>
+            <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 block">&gt;100 strands daily</span>
+          </div>
+        </button>
+        <button class="selectable-card p-space-md rounded-xl bg-surface-container text-left flex flex-col justify-between gap-space-sm transition-all shadow-sm" type="button">
+          <div class="flex items-center justify-between">
+            <span class="material-symbols-outlined text-[20px] text-secondary">adjust</span>
+            <span class="indicator-icon w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center text-[10px]"></span>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface leading-tight">Crown Thinning</h4>
+            <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 block">Vertex parting widening</span>
+          </div>
+        </button>
+        <button class="selectable-card p-space-md rounded-xl bg-surface-container text-left flex flex-col justify-between gap-space-sm transition-all shadow-sm" type="button">
+          <div class="flex items-center justify-between">
+            <span class="material-symbols-outlined text-[20px] text-secondary">maps_ugc</span>
+            <span class="indicator-icon w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center text-[10px]"></span>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface leading-tight">Hairline Recession</h4>
+            <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 block">Bitemporal retreat</span>
+          </div>
+        </button>
+        <button class="selectable-card p-space-md rounded-xl bg-surface-container text-left flex flex-col justify-between gap-space-sm transition-all shadow-sm" type="button">
+          <div class="flex items-center justify-between">
+            <span class="material-symbols-outlined text-[20px] text-secondary">grain</span>
+            <span class="indicator-icon w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center text-[10px]"></span>
+          </div>
+          <div>
+            <h4 class="font-title-md text-title-md text-on-surface leading-tight">Loss of Density</h4>
+            <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 block">Shaft miniaturization</span>
+          </div>
+        </button>
+      </div>
+    </section>
+    <!-- Section 2: Scalp Tissue Symptoms -->
+    <section class="px-gutter mt-space-lg flex flex-col gap-space-sm">
+      <div class="flex items-baseline justify-between">
+        <h3 class="font-title-md text-title-md text-primary">2. Scalp Tissue Symptoms</h3>
+        <span class="font-label-sm text-label-sm text-secondary">Multi-select enabled</span>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant">Noticeable scalp sensations over the last 14 days:</p>
+      <div class="flex flex-wrap gap-2 pt-1">
+        <button class="symptom-pill px-3 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">sentiment_dissatisfied</span><span>Itching &amp; Pruritus</span></button>
+        <button class="symptom-pill px-3 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">ac_unit</span><span>Flaking / Dandruff</span></button>
+        <button class="symptom-pill px-3 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">local_fire_department</span><span>Redness / Erythema</span></button>
+        <button class="symptom-pill px-3 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span><span>Hyper-Sebum / Oil</span></button>
+        <button class="symptom-pill px-3 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">wb_sunny</span><span>Dry Tightness</span></button>
+        <button class="symptom-pill px-3 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all shadow-sm" type="button"><span class="material-symbols-outlined text-[16px] text-secondary">touch_app</span><span>Follicle Tenderness</span></button>
+      </div>
+    </section>
+    <!-- Section 3: Lifestyle Telemetry -->
+    <section class="px-gutter mt-space-lg flex flex-col gap-space-md">
+      <div class="flex items-center justify-between">
+        <h3 class="font-title-md text-title-md text-primary">3. Lifestyle Telemetry</h3>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-container bg-tertiary-fixed px-2 py-0.5 rounded-full">Biological Impact</span>
+      </div>
+      <!-- Sleep -->
+      <div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+        <div class="flex justify-between items-center">
+          <label class="font-title-md text-title-md text-on-surface flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">bedtime</span> Sleep Architecture</label>
+          <span class="font-label-sm text-label-sm font-semibold text-secondary" id="sleep-label">Restful (7-8 hrs)</span>
+        </div>
+        <div class="grid grid-cols-3 gap-2" id="sleep-buttons">
+          <button class="telemetry-btn py-2 px-1 rounded-lg text-center bg-surface text-on-surface-variant font-label-sm text-label-sm transition-all shadow-sm" data-val="Restless" type="button">Fragmented &lt;6h</button>
+          <button class="telemetry-btn py-2 px-1 rounded-lg text-center bg-primary text-on-primary font-label-sm text-label-sm font-semibold transition-all shadow-sm" data-val="Restful (7-8 hrs)" type="button">Balanced 7-8h</button>
+          <button class="telemetry-btn py-2 px-1 rounded-lg text-center bg-surface text-on-surface-variant font-label-sm text-label-sm transition-all shadow-sm" data-val="Optimal (8h+)" type="button">Deep 8h+</button>
+        </div>
+      </div>
+      <!-- Stress -->
+      <div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+        <div class="flex justify-between items-center">
+          <label class="font-title-md text-title-md text-on-surface flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">psychology</span> Cortisol / Stress Load</label>
+          <span class="font-label-sm text-label-sm font-semibold text-secondary" id="stress-level-text">Moderate</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="font-label-sm text-label-sm text-on-surface-variant">Low</span>
+          <input class="w-full h-1.5 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="stress-range" max="5" min="1" type="range" value="3"/>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">Elevated</span>
+        </div>
+      </div>
+      <!-- Hydration -->
+      <div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-center justify-between">
+        <div class="flex items-center gap-space-sm">
+          <div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">water_full</span></div>
+          <div>
+            <span class="font-title-md text-title-md text-on-surface block leading-tight">Daily Water Intake</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">Supports follicle hydration</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 bg-surface px-2 py-1 rounded-full shadow-sm">
+          <button class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold active:scale-95 transition-transform" id="test-water-decrease" type="button">-</button>
+          <span class="font-title-md text-title-md text-primary w-10 text-center font-semibold" id="test-water-count">2.0 L</span>
+          <button class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold active:scale-95 transition-transform" id="test-water-increase" type="button">+</button>
+        </div>
+      </div>
+    </section>
+    <!-- Part 2 Studio Transition Card -->
+    <section class="px-gutter mt-space-lg">
+      <div class="p-space-md rounded-xl bg-primary text-on-primary shadow-md relative overflow-hidden">
+        <div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-secondary/30 blur-2xl pointer-events-none"></div>
+        <div class="flex items-center justify-between">
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary-fixed">Upcoming Step</span>
+          <span class="bg-secondary px-2 py-0.5 rounded-full font-label-sm text-label-sm text-on-secondary flex items-center gap-1"><span class="material-symbols-outlined text-[12px]">verified</span> Trichoscope Ready</span>
+        </div>
+        <h4 class="font-headline-sm text-headline-sm text-on-primary mt-1">Part 2: 5-Angle Scalp Photo Studio</h4>
+        <p class="font-body-sm text-body-sm text-primary-fixed mt-1 leading-snug">Calibrated macro analysis uses 5 precision angles under diffuse ambient light for AI density grading.</p>
+        <div class="grid grid-cols-5 gap-1.5 mt-space-md">
+          <div class="flex flex-col items-center gap-1"><div class="w-full aspect-square rounded-lg overflow-hidden bg-primary-container"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhyXKbVmCXVhp3oBKbjAEgCWDSo45X6JFqRu02vEdZLXLRxRnTPNqBd-9hEO6CZDUTd2IWczg8fmzdD8G2qvFlMY0zdAqNmjkvjJXSoblBEA_jo1aMm6den6-wEI7zsDPb95gk6hzWA9jLkVOuE0uWrIkVhIrS-Imq_YCYWVhL8Hzt1aVMlbrGQ_fEVwvAETz0FNz9soTN8YcJ42Mkws0kD95wsyhuzGQNBzUeSo4" alt="Frontal"/></div><span class="font-label-sm text-[9px] uppercase tracking-tighter text-outline-variant">Frontal</span></div>
+          <div class="flex flex-col items-center gap-1"><div class="w-full aspect-square rounded-lg overflow-hidden bg-primary-container"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW1xqzL5lj8GVZnPbBuMUhO1ZdEzBy-ZEAOKidFDl5AJzcLHanyPvsFu3Y-pGo0Y7TeiC7L3rGBaQS-tPumcUCI4A719SZ8gpaLKuQuHKmLgWcYqkzCm4OQ5F9aWaGU4SsYLdDOsQnGwZnAugyK2LgtN0d4VoXjbWDfgVzNCztFlrF18d20fvuSZkusFiB6_8VL72oW9twTfAo5xNJLEYFP3fR2gJv_DKmf-lzL44" alt="Crown"/></div><span class="font-label-sm text-[9px] uppercase tracking-tighter text-outline-variant">Crown</span></div>
+          <div class="flex flex-col items-center gap-1"><div class="w-full aspect-square rounded-lg overflow-hidden bg-primary-container"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkCWSOymmNb2khoRkPZaip12yygguT3vy3mkLSZdmoRQH-K1IkKkonR2Bmq0f8uKVPs7PIN8CFbLPqVrLaFZJ5dDe_EHJFlvDhAmoUG7fVwDZxkWqa4_NHOMk03LTp7VC1CswyH1tiRIGQigNIV3R1cRWCgwRl3eBXShdzIMiqr96Qpd9dVpdFEV826h5-Odxig2Wa39GAKSNerlJazgjhIEv_ZHweho8Gb7lRo0s" alt="L-Temple"/></div><span class="font-label-sm text-[9px] uppercase tracking-tighter text-outline-variant">L-Temple</span></div>
+          <div class="flex flex-col items-center gap-1"><div class="w-full aspect-square rounded-lg overflow-hidden bg-primary-container"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbwHnFrka4HP2pbqhCRIp8TZe2rhCrAshvlEjOtSPn-Kz35Wftf2HAM24gnQGdM2jImNphsHCpzuBd1gCPIA8Ctg7V1b9h1f1w2q0wGw0HErFFMuyN87NHFNvx9xJTZky766FZQ9wtxTLqtZr_BVygpzsa8h9Q3UBHDm2uxy3lrxPbgmaKSqqiOMj194kB3PaqtIVrtjCVZPS-qIXAYGsWs_SivZ5HzpEqguiG1RY" alt="R-Temple"/></div><span class="font-label-sm text-[9px] uppercase tracking-tighter text-outline-variant">R-Temple</span></div>
+          <div class="flex flex-col items-center gap-1"><div class="w-full aspect-square rounded-lg overflow-hidden bg-primary-container"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVquaCfxnNTKs_iXS1i04huOlQR71ut9DuTEGxDIf4NYWzSmhBjNc4NxgLr60xrVx8fX4eQyQREaLF_vAdr9m4y7jIeQws47KliD-8I1oDIRWP5tqUlysSPzw_iasVnOpIrhWje83HcRzWY6pvPyb9s_STKn0gGCZF6RINaZ_i22_i3-hS6_49R89MWWe7XnNn2Dxx4yeqh35U9SfHFWNNtDNF6P9k6S7ZvVDksQ0" alt="Occipital"/></div><span class="font-label-sm text-[9px] uppercase tracking-tighter text-outline-variant">Occipital</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- Bottom Action Bar -->
+    <section class="px-gutter mt-space-lg flex flex-col gap-2">
+      <div class="hidden text-center py-1.5 px-3 rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md" id="validation-note">✨ Select concerns to see feedback</div>
+      <div class="flex items-center gap-space-sm">
+        <button class="h-12 px-space-md rounded-lg bg-surface-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 hover:bg-surface-container-high active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[18px]">arrow_back</span><span>Back</span></button>
+        <button class="flex-1 h-12 px-space-lg rounded-lg bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-all" id="submit-btn" type="button"><span>Save &amp; Continue to Lifestyle</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></button>
+      </div>
+      <p class="text-center font-body-sm text-body-sm text-on-surface-variant pt-1">Encrypted clinical transmission conforming to HIPAA/GDPR trichological data protocols.</p>
+    </section>
+  </div>
+</section>
+
+<!-- ==================== TAB 3: JOURNEY ==================== -->
+<section class="tab-view px-0 py-0" id="view-journey">
+  <div class="flex flex-col w-full px-gutter py-space-md space-y-space-lg">
+    <!-- Header Context Badge -->
+    <div class="flex items-center justify-between gap-space-sm bg-surface-container-low p-space-md rounded-xl shadow-sm">
+      <div class="flex items-center gap-space-sm min-w-0">
+        <div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+          <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1;">history_edu</span>
+        </div>
+        <div class="flex flex-col min-w-0">
+          <span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Clinical Cohort: Protocol 04</span>
+          <span class="font-title-md text-title-md text-primary truncate">Day 46 · Mid-Cycle Evaluation</span>
+        </div>
+      </div>
+      <button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md transition-all active:scale-95 shadow-sm shrink-0" id="downloadDossierBtn">
+        <span class="material-symbols-outlined text-[16px]">file_download</span><span>Dossier PDF</span>
+      </button>
+    </div>
+    <!-- Clinical Milestone Timeline -->
+    <section class="bg-surface-container-low p-space-lg rounded-xl shadow-sm space-y-space-md">
+      <div class="flex items-center justify-between">
+        <div class="flex flex-col">
+          <span class="font-label-md text-label-md uppercase tracking-widest text-secondary">Biological Protocol Milestones</span>
+          <h2 class="font-headline-sm text-headline-sm text-primary">Regimen Progress Arc</h2>
+        </div>
+        <span class="px-2.5 py-1 rounded-full bg-secondary-container font-label-sm text-label-sm text-on-secondary-container uppercase">65% of Stage I</span>
+      </div>
+      <div class="relative pt-3 pb-2">
+        <div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden relative">
+          <div class="h-full bg-primary rounded-full transition-all duration-700 ease-out" style="width:54%;"></div>
+        </div>
+        <div class="grid grid-cols-3 pt-3 text-center">
+          <div class="flex flex-col items-center group cursor-pointer">
+            <div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center text-[12px] font-semibold mb-1 shadow-sm ring-4 ring-surface-container-low"><span class="material-symbols-outlined text-[14px]">check</span></div>
+            <span class="font-label-sm text-label-sm text-secondary font-semibold">Day 1</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">Baseline Profile</span>
+            <span class="font-label-sm text-label-sm text-outline mt-0.5">Aug 14</span>
+          </div>
+          <div class="flex flex-col items-center group cursor-pointer">
+            <div class="w-7 h-7 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center text-[12px] font-semibold mb-1 shadow-sm ring-4 ring-surface-container-low animate-pulse"><span class="material-symbols-outlined text-[14px]">biotech</span></div>
+            <span class="font-label-sm text-label-sm text-primary font-bold">Week 6</span>
+            <span class="font-body-sm text-body-sm text-primary font-medium">Mid-Cycle Review</span>
+            <span class="font-label-sm text-label-sm text-secondary font-medium mt-0.5">Today</span>
+          </div>
+          <div class="flex flex-col items-center opacity-70 group cursor-pointer">
+            <div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center text-[12px] font-semibold mb-1 shadow-sm ring-4 ring-surface-container-low">3</div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Week 12</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">End-Point Matrix</span>
+            <span class="font-label-sm text-label-sm text-outline mt-0.5">Nov 09</span>
+          </div>
+        </div>
+      </div>
+      <div class="p-3 bg-surface-container rounded-lg flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">auto_graph</span>
+        <p class="font-body-sm text-body-sm text-on-surface-variant"><strong class="text-primary font-semibold">Current State:</strong> Telogen stabilization in active remission. Cellular exfoliation rate increased by 28% following sustained Kansa stimulus protocol.</p>
+      </div>
+    </section>
+    <!-- Dermoscopic Photo Comparison -->
+    <section class="bg-surface-container-low p-space-lg rounded-xl shadow-sm space-y-space-md">
+      <div class="flex items-start justify-between">
+        <div>
+          <span class="font-label-md text-label-md uppercase tracking-widest text-secondary">High-Resolution Trichoscopy</span>
+          <h2 class="font-headline-sm text-headline-sm text-primary">Micro-Follicular Matrix</h2>
+        </div>
+        <div class="flex bg-surface-container rounded-lg p-0.5" id="zoneToggle">
+          <button class="px-2.5 py-1 text-label-sm font-label-sm rounded-md bg-surface-container-lowest text-primary shadow-sm transition-all" id="zoneFrontBtn" onclick="setZone('front')">Front Hairline</button>
+          <button class="px-2.5 py-1 text-label-sm font-label-sm rounded-md text-on-surface-variant hover:text-primary transition-all" id="zoneCrownBtn" onclick="setZone('crown')">Crown Vortex</button>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 px-3 py-1.5 bg-surface-container rounded-lg">
+        <span class="material-symbols-outlined text-[16px] text-secondary">light_mode</span>
+        <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Calibrated 420nm Cross-Polarized Trichoscopy</span>
+      </div>
+      <div class="space-y-space-sm">
+        <div class="grid grid-cols-2 gap-2 relative overflow-hidden rounded-xl bg-surface-container-high p-1">
+          <div class="relative flex flex-col rounded-lg overflow-hidden bg-surface-container-lowest">
+            <div class="overflow-hidden relative h-48 w-full">
+              <img class="w-full h-full object-cover transition-transform duration-200" id="imgBaseline" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNgHcrFhxvmUV-Tv1jDJvcWmpqem8a-QlXt8S9YpHM5IFFULfFM931_IEB68P8Szhq6fRVvByqGn5_hnN5oaTEJ9MvnuJRdcUFEgUDe6C7dKRExSW-qewwuKJnUmfcEt2g4PkO9Uqa7OSx4-yuxwUxEoySLFFs0lQvQddY45x1a8ue9u17vedlRNHFOOAB0jQalR5mv3boNO6EpfFJq1Nk4yXuykdryNspmn1s-EU" alt="Day 1 Baseline" style="transform:scale(1);"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent pointer-events-none"></div>
+              <div class="absolute top-2 left-2 px-2 py-0.5 bg-primary/80 backdrop-blur-sm rounded text-on-primary font-label-sm text-label-sm uppercase tracking-wider">Day 1 Baseline</div>
+              <div class="absolute bottom-2 left-2 right-2 text-on-primary">
+                <span class="font-label-sm text-label-sm block opacity-80">Aug 14, 2024</span>
+                <span class="font-body-sm text-body-sm font-medium">124 fol/cm²</span>
+              </div>
+            </div>
+          </div>
+          <div class="relative flex flex-col rounded-lg overflow-hidden bg-surface-container-lowest">
+            <div class="overflow-hidden relative h-48 w-full">
+              <img class="w-full h-full object-cover transition-transform duration-200" id="imgWeek6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB7QbxEd937wvsN9GJHPZvjIlUwR7p24Cg6E6biH0vpk_G1ySdnix7WqiUMYeHc7kgL6Z1DuTMIN42Qk1EA9KW__LYhAy8bDvUxtloawhEeu3DiPTTUuWRadoFwC56KvLWP1RuWa05ttB7pHoyjNp1ACTBtuagqADeFc9_AEu5tuNrqoNCL8oZY_evgcvUtkW-zUbeBk7csHhouhltlijEKZngnDfKHnOKADC3QmM" alt="Week 6" style="transform:scale(1);"/>
+              <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent pointer-events-none"></div>
+              <div class="absolute top-2 left-2 px-2 py-0.5 bg-secondary-container backdrop-blur-sm rounded text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">Week 6 Today</div>
+              <div class="absolute bottom-2 left-2 right-2 text-on-primary">
+                <span class="font-label-sm text-label-sm block opacity-80">Sep 25, 2024</span>
+                <span class="font-body-sm text-body-sm font-medium text-primary-fixed">138 fol/cm² (+11%)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Zoom Slider -->
+        <div class="flex items-center gap-3 px-2 py-1 bg-surface-container rounded-lg">
+          <span class="material-symbols-outlined text-[18px] text-on-surface-variant">zoom_out</span>
+          <input class="w-full h-1.5 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary" id="dermZoomSlider" max="2.5" min="1" step="0.05" type="range" value="1"/>
+          <span class="material-symbols-outlined text-[18px] text-on-surface-variant">zoom_in</span>
+          <span class="font-label-sm text-label-sm text-secondary font-mono w-10 text-right" id="zoomDisplay">1.0x</span>
+        </div>
+      </div>
+      <div class="p-3 bg-surface-container-high/60 rounded-lg flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-[16px] text-outline mt-0.5 shrink-0">info</span>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Comparison calibrated under standardized 420nm light. No automatic claims of hair regrowth without licensed trichologist validation.</p>
+      </div>
+    </section>
+    <!-- Daily Habit & Wash Tracker -->
+    <section class="bg-surface-container-low p-space-lg rounded-xl shadow-sm space-y-space-md">
+      <div class="flex items-center justify-between">
+        <div class="flex flex-col">
+          <span class="font-label-md text-label-md uppercase tracking-widest text-secondary">Regimen Compliance</span>
+          <h2 class="font-headline-sm text-headline-sm text-primary">Daily Botanical Schedule</h2>
+        </div>
+        <div class="flex items-center gap-1.5 px-3 py-1 bg-tertiary-fixed rounded-full text-on-tertiary-fixed shadow-sm">
+          <span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">electric_bolt</span>
+          <span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">18-Day Streak</span>
+        </div>
+      </div>
+      <!-- Weekly Calendar -->
+      <div class="bg-surface-container p-3 rounded-xl">
+        <div class="flex items-center justify-between mb-2">
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Current Cycle (Week 6)</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant font-medium">92% Regimen Adherence</span>
+        </div>
+        <div class="grid grid-cols-7 gap-1.5 text-center">
+          <button class="flex flex-col items-center py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-highest transition-all group" onclick="toggleCalendarDot(this)"><span class="font-label-sm text-label-sm text-outline">Sun</span><span class="font-title-md text-title-md text-on-surface mt-1">22</span><span class="w-2 h-2 rounded-full bg-secondary mt-1.5 transition-transform group-hover:scale-125"></span></button>
+          <button class="flex flex-col items-center py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-highest transition-all group" onclick="toggleCalendarDot(this)"><span class="font-label-sm text-label-sm text-outline">Mon</span><span class="font-title-md text-title-md text-on-surface mt-1">23</span><span class="w-2 h-2 rounded-full bg-secondary mt-1.5 transition-transform group-hover:scale-125"></span></button>
+          <button class="flex flex-col items-center py-2 rounded-lg bg-surface-container-lowest shadow-sm hover:bg-surface-container-highest transition-all group" onclick="toggleCalendarDot(this)"><span class="font-label-sm text-label-sm text-secondary font-semibold">Tue</span><span class="font-title-md text-title-md text-primary mt-1 font-bold">24</span><div class="flex gap-0.5 mt-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span></div></button>
+          <button class="flex flex-col items-center py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all group ring-2 ring-primary" onclick="toggleCalendarDot(this)"><span class="font-label-sm text-label-sm text-primary-fixed">Wed</span><span class="font-title-md text-title-md text-on-primary mt-1 font-bold">25</span><span class="w-2 h-2 rounded-full bg-secondary-container mt-1.5 animate-bounce"></span></button>
+          <button class="flex flex-col items-center py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-highest transition-all group" onclick="toggleCalendarDot(this)"><span class="font-label-sm text-label-sm text-outline">Thu</span><span class="font-title-md text-title-md text-on-surface mt-1">26</span><span class="w-2 h-2 rounded-full bg-surface-container-highest mt-1.5"></span></button>
+          <button class="flex flex-col items-center py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-highest transition-all group" onclick="toggleCalendarDot(this)"><span class="font-label-sm text-label-sm text-outline">Fri</span><span class="font-title-md text-title-md text-on-surface mt-1">27</span><span class="w-2 h-2 rounded-full bg-surface-container-highest mt-1.5"></span></button>
+          <button class="flex flex-col items-center py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-highest transition-all group" onclick="toggleCalendarDot(this)"><span class="font-label-sm text-label-sm text-outline">Sat</span><span class="font-title-md text-title-md text-on-surface mt-1">28</span><span class="w-2 h-2 rounded-full bg-on-tertiary-container/40 mt-1.5"></span></button>
+        </div>
+      </div>
+      <!-- Habit Items -->
+      <div class="space-y-2">
+        <div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[18px]">water_drop</span></div>
+            <div><h3 class="font-title-md text-title-md text-primary">Scalp Oil Treatment</h3><span class="font-body-sm text-body-sm text-on-surface-variant">Bhringraj &amp; Rosemary Infusion · Tues &amp; Sat</span></div>
+          </div>
+          <button class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1 active:scale-95 transition-all"><span class="material-symbols-outlined text-[14px]">done</span> Done</button>
+        </div>
+        <div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary"><span class="material-symbols-outlined text-[18px]">soap</span></div>
+            <div><h3 class="font-title-md text-title-md text-primary">Botanical Cleansing Day</h3><span class="font-body-sm text-body-sm text-on-surface-variant">Gentle Shikakai Wash · 2x weekly</span></div>
+          </div>
+          <button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium hover:bg-surface-container-high active:scale-95 transition-all" id="logWashBtn">Log Wash</button>
+        </div>
+        <div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-tertiary-container text-tertiary-fixed flex items-center justify-center"><span class="material-symbols-outlined text-[18px]">spa</span></div>
+            <div><h3 class="font-title-md text-title-md text-primary">Kansa Wand Stimulation</h3><span class="font-body-sm text-body-sm text-on-surface-variant">5 min acupressure micro-drainage · Daily</span></div>
+          </div>
+          <div class="flex items-center gap-1.5 text-secondary"><span class="material-symbols-outlined text-[18px]" style="font-variation-settings:'FILL' 1;">check_circle</span><span class="font-label-sm text-label-sm font-bold">18d Streak</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- Progress Notes & Scalp Journal -->
+    <section class="bg-surface-container-low p-space-lg rounded-xl shadow-sm space-y-space-md">
+      <div class="flex items-center justify-between">
+        <div class="flex flex-col">
+          <span class="font-label-md text-label-md uppercase tracking-widest text-secondary">Clinical Journal</span>
+          <h2 class="font-headline-sm text-headline-sm text-primary">Scalp Observations &amp; Notes</h2>
+        </div>
+        <button class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md transition-all active:scale-95 shadow-sm" id="openLogModalBtn"><span class="material-symbols-outlined text-[16px]">add</span><span>Log Entry</span></button>
+      </div>
+      <!-- Quick Logger -->
+      <div class="p-3 bg-surface-container rounded-xl space-y-2.5">
+        <div class="flex items-center justify-between">
+          <span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary">Log Today's Scalp Observation</span>
+          <span class="font-label-sm text-label-sm text-outline">Today, 2:40 PM</span>
+        </div>
+        <div class="flex flex-wrap gap-1.5">
+          <button class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all" onclick="toggleTag(this)">Zero Itching</button>
+          <button class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm transition-all" onclick="toggleTag(this)">Normal Sebum</button>
+          <button class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:bg-secondary-container hover:text-on-secondary-container transition-all" onclick="toggleTag(this)">Mild Flaking</button>
+          <button class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm transition-all" onclick="toggleTag(this)">Tension Relief</button>
+        </div>
+        <textarea class="w-full rounded-lg bg-surface-container-lowest p-2.5 text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-secondary resize-none" placeholder="Record sensations, shedding during wash, or protocol compliance notes..." rows="2"></textarea>
+        <div class="flex justify-end gap-2">
+          <button class="px-4 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-all active:scale-95 shadow-sm" id="saveNoteBtn">Save Observation</button>
+        </div>
+      </div>
+      <!-- Past Entries -->
+      <div class="space-y-3" id="logStream">
+        <div class="p-3 bg-surface-container-lowest rounded-xl space-y-1.5 shadow-sm">
+          <div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-bold text-primary">Day 44 · Wash Session</span></div><span class="font-label-sm text-label-sm text-outline">Sep 23, 2024</span></div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">"Noticeable reduction in brush shedding post-rinse. Hair shafts along crown feel firmer at root bed after 10-min cold rinse sequence."</p>
+          <div class="flex items-center gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary">Low Shedding</span><span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary">Root Firmness</span></div>
+        </div>
+        <div class="p-3 bg-surface-container-lowest rounded-xl space-y-1.5 shadow-sm">
+          <div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-bold text-primary">Day 41 · Oil Treatment &amp; Wand</span></div><span class="font-label-sm text-label-sm text-outline">Sep 20, 2024</span></div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">"Completed scheduled rosemary scalp formulation. Followed by 5 minutes Kansa stimulation across occipital crest. Gentle thermal sensation observed."</p>
+          <div class="flex items-center gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary">Thermal Response</span><span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary">Kansa Protocol</span></div>
+        </div>
+        <div class="p-3 bg-surface-container-lowest rounded-xl space-y-1.5 shadow-sm">
+          <div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm font-bold text-primary">Day 35 · Monthly Trichologist Check-In</span></div><span class="font-label-sm text-label-sm text-outline">Sep 14, 2024</span></div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">"Reviewed with Dr. Varma: Micro-vascular circulation in temporal zones responding positively. Recommended maintaining 48-hour cadence for botanical wash."</p>
+          <div class="flex items-center gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary">Trichologist Validated</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Journey Toast -->
+  <div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-4 py-2.5 rounded-full shadow-lg font-label-md text-label-md flex items-center gap-2 transition-all opacity-0 pointer-events-none z-50" id="journeyToast">
+    <span class="material-symbols-outlined text-[18px]">verified</span>
+    <span id="journeyToastMsg">Clinical Progress Dossier compiled &amp; ready</span>
+  </div>
+</section>
+
+<!-- ==================== TAB 4: SHOP ==================== -->
+<section class="tab-view px-0 py-0" id="view-shop">
+  <div class="flex flex-col w-full px-margin pb-6 gap-space-lg pt-4">
+    <!-- Search & Filter -->
+    <div class="flex flex-col gap-space-sm">
+      <div class="relative w-full">
+        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-secondary"><span class="material-symbols-outlined text-[20px]">search</span></div>
+        <input class="w-full h-12 pl-11 pr-10 bg-surface-container-low rounded-xl text-on-surface font-body-md placeholder:text-outline focus:outline-none shadow-sm transition-all" id="apothecary-search" placeholder="Search formulations, botanicals, targets..." type="text"/>
+        <div class="absolute inset-y-0 right-0 pr-3 flex items-center"><button class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-secondary hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">tune</span></button></div>
+      </div>
+      <!-- Category Pills -->
+      <div class="flex items-center gap-space-xs overflow-x-auto py-1 -mx-margin px-margin" style="scrollbar-width:none;">
+        <button class="category-pill active flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm transition-all" data-category="all"><span>All Items</span><span class="text-[10px] opacity-75">4</span></button>
+        <button class="category-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-all" data-category="oils"><span>Hair Oils &amp; Elixirs</span></button>
+        <button class="category-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-all" data-category="cleansers"><span>Scalp Cleansers</span></button>
+        <button class="category-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-all" data-category="serums"><span>Peptide Serums</span></button>
+        <button class="category-pill flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md whitespace-nowrap hover:bg-surface-container-high transition-all" data-category="tools"><span>Kansa &amp; Tools</span></button>
+      </div>
+    </div>
+    <!-- Prescription Banner -->
+    <div class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-space-md shadow-md">
+      <div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary-container/10 pointer-events-none blur-2xl"></div>
+      <div class="flex items-start justify-between gap-space-sm relative z-10">
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Clinical Prescription Alignment</span></div>
+        <span class="px-2 py-0.5 rounded-full bg-primary-container text-tertiary-fixed font-label-sm text-label-sm">#KSH-9924</span>
+      </div>
+      <div class="mt-2 relative z-10">
+        <h2 class="font-headline-sm text-headline-sm text-surface-bright leading-snug">Phase 2 Follicular Support</h2>
+        <p class="font-body-sm text-body-sm text-primary-fixed-dim mt-0.5">Formulations matched to your trichogram data: Vertex thinning &amp; microvascular density revitalization.</p>
+      </div>
+      <div class="mt-3 pt-2.5 flex items-center justify-between text-surface-bright/90 relative z-10">
+        <div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings:'FILL' 1;">verified</span><span class="font-label-sm text-label-sm">3 of 4 formulations active in protocol</span></div>
+        <span class="font-label-sm text-label-sm text-tertiary-fixed flex items-center gap-0.5">View Diagnostic<span class="material-symbols-outlined text-[14px]">chevron_right</span></span>
+      </div>
+    </div>
+    <!-- Product Catalog -->
+    <div class="flex flex-col gap-space-md" id="product-catalog">
+      <!-- Product 1 -->
+      <div class="product-item rounded-xl bg-surface-container-low p-space-md shadow-sm transition-all" data-category="oils" data-id="p1" data-name="Cold-Pressed Himalayan Walnut &amp; Bhringraj Scalp Elixir" data-price="2450">
+        <div class="flex gap-space-md">
+          <div class="relative w-28 h-36 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVg-gFaAfysc1DOzqgPZhIwGUVcuMjrG2r2XtYdynq47GntPwOeovDhF_ozOmXf5avTAZa8Jtx_3qgAc6keDr-0j_JXo_uAjxMou17u3Q-0zGT8BzXArgXq2h-msd32aDL59wnWWEdQxgVtDo6O3uaeBY_uPfSZ103FsGH7qzlM13UiGtXpAGDkLruvPpEBWbV6WsSJ7VeT88M5Vwt1N6pRIWLL8hkDY8RRVEXbs4" alt="Walnut Elixir"/>
+            <span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-primary/80 backdrop-blur text-surface font-label-sm text-label-sm uppercase tracking-wider">Prescribed</span>
+          </div>
+          <div class="flex flex-col justify-between flex-1 min-w-0">
+            <div>
+              <div class="flex items-center justify-between gap-1"><span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary truncate">Microcirculation &amp; Vertex</span><span class="font-label-sm text-label-sm text-outline flex-shrink-0">100ml</span></div>
+              <h3 class="font-headline-sm text-headline-sm text-primary mt-0.5 line-clamp-2 leading-tight">Cold-Pressed Himalayan Walnut &amp; Bhringraj Elixir</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Infused in raw cold-pressed walnut oil to invigorate dormant vertex follicles and re-anchor sheaths.</p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-2"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Bhringraj (Eclipta Alba)</span><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Himalayan Walnut</span></div>
+          </div>
+        </div>
+        <div class="mt-3.5 pt-3 flex items-center justify-between">
+          <div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Price</span><span class="font-metric-val text-metric-val text-primary leading-none">NPR 2,450</span></div>
+          <div class="flex items-center gap-2" id="action-p1"><button class="add-to-bag-btn px-4 h-10 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" data-id="p1"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span>Add to Bag</span></button></div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-item rounded-xl bg-surface-container-low p-space-md shadow-sm transition-all" data-category="cleansers" data-id="p2" data-name="Zinc &amp; Saw Palmetto Scalp Purifying Cleanser" data-price="1850">
+        <div class="flex gap-space-md">
+          <div class="relative w-28 h-36 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI7gsAssaSM9lYiq-wML8klQdFYSTaW9ILwW9XiHQA9J83qovtKI1GHtE9I29yX58ogzroTcw3VJSz7FQ9W8NWGuRXf-89JKwCjVXZR185un2O-WBsFTfGPMEMvu0XUHRfEt723ypLeR4wM0vADNhOROO-dwMtHdngnHSWsLnFHqgIsxIJGtHJ4JE-vlQcpvTgDWwSxGb6FrvZbH1xUIdBP3jorIO0cAHDuWvBQWQ" alt="Cleanser"/>
+            <span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider">In Stock</span>
+          </div>
+          <div class="flex flex-col justify-between flex-1 min-w-0">
+            <div>
+              <div class="flex items-center justify-between gap-1"><span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary truncate">Sebum Balance &amp; DHT Control</span><span class="font-label-sm text-label-sm text-outline flex-shrink-0">200ml</span></div>
+              <h3 class="font-headline-sm text-headline-sm text-primary mt-0.5 line-clamp-2 leading-tight">Zinc &amp; Saw Palmetto Scalp Purifying Cleanser</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Sulfate-free formulation breaking down DHT-binding sebum without stripping protective microflora.</p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-2"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Zinc PCA 1.5%</span><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Serenoa Repens</span></div>
+          </div>
+        </div>
+        <div class="mt-3.5 pt-3 flex items-center justify-between">
+          <div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Price</span><span class="font-metric-val text-metric-val text-primary leading-none">NPR 1,850</span></div>
+          <div class="flex items-center gap-2" id="action-p2"><button class="add-to-bag-btn px-4 h-10 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" data-id="p2"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span>Add to Bag</span></button></div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-item rounded-xl bg-surface-container-low p-space-md shadow-sm transition-all" data-category="serums" data-id="p3" data-name="Copper Tripeptide-1 Follicular Anchor Serum" data-price="3200">
+        <div class="flex gap-space-md">
+          <div class="relative w-28 h-36 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ6Sb1lStiNZ-Z5JyHcJ8xxk0oTWOVFwOXMptCgkzpfPqYPF5VSSTurPQb21XS-iqx_UIUdpxQYr8EusQQO7znFW7uKDkUtfoQw4HC-cjHHbMS4Fx0UwZ29GYFweKSrqjJf_x2inQ4ewIQcUwZ9pTghmAAzZ8KZ1ADkokjixKu4z82ZVFsv2w07OVNLyu7HDJ_D_npEPd_6Pbr0YgSvjJ9BkeTGZUCI6b8eHvmTgw" alt="Copper Peptide Serum"/>
+            <span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-primary/80 backdrop-blur text-surface font-label-sm text-label-sm uppercase tracking-wider">Prescribed</span>
+          </div>
+          <div class="flex flex-col justify-between flex-1 min-w-0">
+            <div>
+              <div class="flex items-center justify-between gap-1"><span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary truncate">Telogen Shedding Stabilization</span><span class="font-label-sm text-label-sm text-outline flex-shrink-0">50ml</span></div>
+              <h3 class="font-headline-sm text-headline-sm text-primary mt-0.5 line-clamp-2 leading-tight">Copper Tripeptide-1 Anchor Serum</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Bio-mimetic peptide system extending anagen growth phase and reinforcing dermal papilla adhesion.</p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-2"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">GHK-Cu 2.0%</span><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Caffeine</span></div>
+          </div>
+        </div>
+        <div class="mt-3.5 pt-3 flex items-center justify-between">
+          <div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Price</span><span class="font-metric-val text-metric-val text-primary leading-none">NPR 3,200</span></div>
+          <div class="flex items-center gap-2" id="action-p3"><button class="add-to-bag-btn px-4 h-10 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" data-id="p3"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span>Add to Bag</span></button></div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-item rounded-xl bg-surface-container-low p-space-md shadow-sm transition-all" data-category="tools" data-id="p4" data-name="Handcrafted Bronze Kansa Wand Scalp Stimulator" data-price="2950">
+        <div class="flex gap-space-md">
+          <div class="relative w-28 h-36 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container">
+            <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1JX8tvU_AESYb0ap6HAhu7XZdIboaiElAUUWkb-gYAKrvfn909xQN1T7f918pKhxWPYh8IN1_Sgax52Q9stLk6M4qxYRgHEsoIdr2zMvqQbXIWCA8AWRICAtzyr2EBxG2bYU23ueuBFa5Q46-uh006FI36zxhgKs7JkiJ5_b48l7gDb8UCH10TkUBpvi-oa8djeIiqzb99Xww0SHK-s07YwYwHuK37d3sockdmsA" alt="Kansa Wand"/>
+            <span class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider">Artisanal</span>
+          </div>
+          <div class="flex flex-col justify-between flex-1 min-w-0">
+            <div>
+              <div class="flex items-center justify-between gap-1"><span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary truncate">Marma Point Stimulation</span><span class="font-label-sm text-label-sm text-outline flex-shrink-0">1 Unit</span></div>
+              <h3 class="font-headline-sm text-headline-sm text-primary mt-0.5 line-clamp-2 leading-tight">Bronze Kansa Wand Scalp Stimulator</h3>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Hand-cast copper and tin bell-metal dome designed to release cranial tension and unblock dormant scalp channels.</p>
+            </div>
+            <div class="flex flex-wrap gap-1 mt-2"><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Pure Kansa Bronze</span><span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Rosewood Grip</span></div>
+          </div>
+        </div>
+        <div class="mt-3.5 pt-3 flex items-center justify-between">
+          <div class="flex flex-col"><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Price</span><span class="font-metric-val text-metric-val text-primary leading-none">NPR 2,950</span></div>
+          <div class="flex items-center gap-2" id="action-p4"><button class="add-to-bag-btn px-4 h-10 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" data-id="p4"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span>Add to Bag</span></button></div>
+        </div>
+      </div>
+    </div>
+    <!-- Apothecary Disclosure -->
+    <div class="rounded-xl bg-surface-container p-space-md flex gap-3 items-start shadow-sm">
+      <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0 mt-0.5"><span class="material-symbols-outlined text-[18px]">verified_user</span></div>
+      <div class="flex flex-col gap-1">
+        <span class="font-label-md text-label-md uppercase tracking-wider text-primary">Apothecary Standards &amp; Disclosure</span>
+        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Cosmetic &amp; botanical formulation. Free of synthetic silicones, parabens, and artificial fragrances. Not a prescription pharmaceutical. Prepared strictly under trichological micro-batch guidelines in Kathmandu.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Floating Cart Quick Bar -->
+  <div class="fixed bottom-20 left-margin right-margin z-40 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="cart-quick-bar" style="left:1.5rem;right:1.5rem;">
+    <div class="w-full bg-primary text-on-primary rounded-xl p-3 px-4 shadow-xl flex items-center justify-between pointer-events-auto">
+      <div class="flex items-center gap-3">
+        <div class="relative w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-tertiary-fixed">
+          <span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+          <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center justify-center leading-none" id="cart-count-badge">0</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed">Prescription Bag</span>
+          <span class="font-title-md text-title-md leading-tight text-surface-bright" id="cart-total-text">NPR 0</span>
+        </div>
+      </div>
+      <button class="px-4 py-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-transform shadow-sm"><span>Proceed to Bag</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TAB 5: PROFILE ==================== -->
+<section class="tab-view px-0 py-0" id="view-profile">
+  <div class="flex flex-col w-full">
+    <div class="px-gutter pt-space-md pb-space-lg flex flex-col gap-space-lg">
+      <!-- Patient Identity Card -->
+      <div class="bg-surface-container rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+        <div class="absolute -right-8 -top-8 w-36 h-36 rounded-full bg-secondary/5 blur-2xl pointer-events-none"></div>
+        <div class="flex items-start gap-space-md relative z-10">
+          <div class="relative shrink-0">
+            <img class="w-16 h-16 rounded-full object-cover shadow-sm bg-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_7gElzu5uoFYz9yNujtpE9aPvWbij1lUl-nY5u9xZBsB3rIkgqrycJ5dZqtKjO2ElOgfal1V-7Hxny_1sCuxRiTdJqXf3LFvorRko2XEwDNVmOd_hk2rZ2mdcbnXZHtwYJwTDITLfPzkEE1Oa1FZbumPVNt4h5uwc5_dr-jGUFXnmc4RGXavpABskyhck0HPxXwzpGvv8r_m3oztFonwioMi8n4bavr5TFYTM3fo" alt="Aaradhya Sharma"/>
+            <div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow"><span class="material-symbols-outlined text-tertiary-fixed text-[14px]" style="font-variation-settings:'FILL' 1;">verified</span></div>
+          </div>
+          <div class="flex flex-col min-w-0 flex-1">
+            <div class="flex items-center gap-space-xs flex-wrap"><h2 class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">Aaradhya Sharma</h2></div>
+            <span class="font-label-md text-label-md text-secondary tracking-widest uppercase mt-0.5">ID: #KSH-4091</span>
+            <div class="flex items-center gap-space-xs mt-1 text-on-surface-variant font-body-sm text-body-sm">
+              <span class="material-symbols-outlined text-[15px] text-secondary">location_on</span>
+              <span class="truncate">Kathmandu, Nepal</span>
+              <span class="w-1 h-1 rounded-full bg-outline-variant mx-0.5"></span>
+              <span class="text-on-surface-variant/80">Since Oct 2024</span>
+            </div>
+          </div>
+        </div>
+        <!-- Quick Metrics -->
+        <div class="grid grid-cols-3 gap-space-xs pt-space-sm">
+          <div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col items-center text-center shadow-sm"><span class="font-metric-val text-metric-val text-primary leading-tight">2</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Clinical Tests</span></div>
+          <div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col items-center text-center shadow-sm"><span class="font-metric-val text-metric-val text-secondary leading-tight">1</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Active Plan</span></div>
+          <div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col items-center text-center shadow-sm"><div class="flex items-center gap-0.5"><span class="font-metric-val text-metric-val text-primary leading-tight">18</span><span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings:'FILL' 1;">local_fire_department</span></div><span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Day Streak</span></div>
+        </div>
+      </div>
+      <!-- Diagnostic Vault -->
+      <div class="flex flex-col gap-space-sm">
+        <div class="flex items-center justify-between px-space-xs">
+          <div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">clinical_notes</span><h3 class="font-title-md text-title-md text-primary">Diagnostic Vault</h3></div>
+          <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary bg-secondary-container/40 px-2 py-0.5 rounded-full">Dermoscopic Sync</span>
+        </div>
+        <!-- Report Card -->
+        <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+          <div class="flex items-start justify-between">
+            <div class="flex items-start gap-space-sm">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm"><span class="material-symbols-outlined text-[22px]">picture_as_pdf</span></div>
+              <div class="flex flex-col"><span class="font-title-md text-title-md text-primary">Comprehensive Scalp Biome Report</span><span class="font-body-sm text-body-sm text-on-surface-variant">Validated by Lab AI • Nov 14, 2024</span></div>
+            </div>
+            <button class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary-fixed transition-colors" id="viewReportBtn">View PDF</button>
+          </div>
+          <div class="bg-surface-container-lowest rounded-lg p-space-sm flex items-center justify-between text-on-surface font-body-sm text-body-sm">
+            <div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span><span>Follicular Density: <strong class="text-primary font-medium">174 /cm²</strong> (+8%)</span></div>
+            <span class="font-label-sm text-label-sm text-secondary">Optimal Sebum</span>
+          </div>
+        </div>
+        <!-- 5-Angle Vault -->
+        <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-space-sm">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shadow-sm"><span class="material-symbols-outlined text-[22px]">lock</span></div>
+              <div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-title-md text-title-md text-primary">5-Angle Dermoscopic Vault</span><span class="material-symbols-outlined text-[14px] text-secondary">verified_user</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">AES-256 Protected Medical Archive</span></div>
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">5 Assets</span>
+          </div>
+          <div class="grid grid-cols-5 gap-1.5 pt-space-xs">
+            <div class="aspect-square rounded-md overflow-hidden relative bg-surface-container-high"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLMhShLiSO5HZSix5vck-T1ssDdUFAv17JXs0RheaGIro6kIlwh2IeYPmkKhttaFAo8V6HcD7P3NsUoLfBD5jjhLASbjE37ad2aqlahdqMXVIJ--KCuXtcIfMfhbGagS1SW3f6bLAptMhvFsXD2pCxIa2de2v8lMW8NE-5RjL6wL6tNd3kThTs9w4kXc055zb8Ex3gdH_QQxmxX944fyhWnaomIEYANPwoDhiKLZA" alt="VRTX"/><div class="absolute inset-0 bg-primary/20 flex items-center justify-center"><span class="font-label-sm text-[9px] text-on-primary uppercase font-bold tracking-tight">VRTX</span></div></div>
+            <div class="aspect-square rounded-md overflow-hidden relative bg-surface-container-high"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEQZe_V_53EXG3j3V2scozMmPVHRK96mprLAzicMBH0NnznJMbtKGUHFe9P8yQLPbXoDM_UP1l8f9axJRd_oLXQecxYMP78KHdDdIGvNZHem-N6uhHln0-I-8nv6aKJ6bOSsJOzo4v07FLA6Vf3Ft410rZR7t5ONQFfyi6-LYNVDG02Va7x_iHP_YPNiatTyd5k0MgtGk45o6uNwHnjI-MLL6RRpGLjDH7yDI--DA" alt="FRNT"/><div class="absolute inset-0 bg-primary/20 flex items-center justify-center"><span class="font-label-sm text-[9px] text-on-primary uppercase font-bold tracking-tight">FRNT</span></div></div>
+            <div class="aspect-square rounded-md overflow-hidden relative bg-surface-container-high"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuFxN-fBqXlCOoe8wrSkdLKKITIeW6x2rINEeRH0kKBKcMrDuUUC88_wBVrgHfMI94UmX6IWDTD3JOQya1q6YkbrnnqXWTy3HVJJMS51xHpEieyitlL7ycx1DYdZKKjR8cAx1B4zVyJpPUnhXi-zV2RiU3zVCnifdRl_uMcu4zur5m2u1fj3J-BcI0ODr5oKCLhL4P_ClPG_-uWcLgPE17kSqdEoirUNf2zECvPNI" alt="TMP-L"/><div class="absolute inset-0 bg-primary/20 flex items-center justify-center"><span class="font-label-sm text-[9px] text-on-primary uppercase font-bold tracking-tight">TMP-L</span></div></div>
+            <div class="aspect-square rounded-md overflow-hidden relative bg-surface-container-high"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNxSp8cftTjyCke9msVIaHAMXo5MOY8UAGt5T-kcHBJ9cxNdDD8fEAymth_DtYknAytlFcZLttNmkJNU8Z962OTjpDiPwr0CZjVboOBBBXRk4CzDr_rrYZ3LxOGZVXE_81oG-n32Xdrx2xM3N-U_3DptkTkytTKJeTyVlZQEDrrYFn7q7WSQ77t9CYALPltT7woRC1l_aZXysNs82ZFg_t5uvM2NYO4R__f0ZNjNA" alt="TMP-R"/><div class="absolute inset-0 bg-primary/20 flex items-center justify-center"><span class="font-label-sm text-[9px] text-on-primary uppercase font-bold tracking-tight">TMP-R</span></div></div>
+            <div class="aspect-square rounded-md overflow-hidden relative bg-surface-container-high"><img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4ULP0YLhVYiZtK78vE_t0N6RzwbLgEVp6AqNZAsb3KuCN6gaoDJUydwghQ5l4m8oglUOlrcfiuAN-nQ2Ax2WmlesSCpv4gB6KjatnljBZSpr_R3VKHqs--1LSxoEfgg9VcUXcp1XPJ5hm9fStxAxqOQfsmJaDNxS_3ebeShdOkpr04h46X2g4Bdh50_eZTjSR4wKps" alt="OCCP"/><div class="absolute inset-0 bg-primary/20 flex items-center justify-center"><span class="font-label-sm text-[9px] text-on-primary uppercase font-bold tracking-tight">OCCP</span></div></div>
+          </div>
+        </div>
+        <!-- Trichologist Notes -->
+        <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+          <div class="flex items-start gap-space-sm">
+            <div class="w-10 h-10 rounded-lg bg-primary-container text-tertiary-fixed flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-[20px]">stethoscope</span></div>
+            <div class="flex flex-col flex-1 min-w-0">
+              <div class="flex items-center justify-between"><span class="font-title-md text-title-md text-primary">Dr. S. Karki, MD (Trichology)</span><span class="font-label-sm text-label-sm text-on-surface-variant">Nov 16, 2024</span></div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">"Notable follicular stabilization along vertex. Recommend elevating rosemary peptide concentration from 2% to 3.5% for winter dry spell in Kathmandu valley."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Prescribed Apothecary -->
+      <div class="flex flex-col gap-space-sm">
+        <div class="flex items-center justify-between px-space-xs">
+          <div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">medication</span><h3 class="font-title-md text-title-md text-primary">Prescribed Apothecary</h3></div>
+          <span class="font-label-sm text-label-sm text-secondary font-medium">Bespoke Protocol</span>
+        </div>
+        <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-title-md text-title-md text-primary">Dispatch #KSH-8841</span></div>
+            <span class="font-label-md text-label-md bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full">In Transit</span>
+          </div>
+          <div class="flex items-center gap-space-md py-1">
+            <div class="w-12 h-12 rounded-lg bg-surface-container-lowest p-1 shrink-0 flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-secondary text-[26px]">local_shipping</span></div>
+            <div class="flex flex-col min-w-0"><span class="font-body-md text-body-md text-on-surface font-medium truncate">Winter Scalp Actives &amp; Bhringraj Elixir</span><span class="font-body-sm text-body-sm text-on-surface-variant">Kathmandu Courier Priority • ETA Tomorrow</span></div>
+          </div>
+          <div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden"><div class="bg-primary h-full rounded-full w-3/4"></div></div>
+        </div>
+      </div>
+      <!-- Regimen Alerts -->
+      <div class="flex flex-col gap-space-sm">
+        <div class="flex items-center gap-space-xs px-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">notifications_active</span><h3 class="font-title-md text-title-md text-primary">Regimen Schedule Alerts</h3></div>
+        <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+          <div class="flex items-center justify-between">
+            <div class="flex flex-col pr-space-md"><span class="font-body-md text-body-md text-primary font-medium">Daily Follicular Serum</span><span class="font-body-sm text-body-sm text-on-surface-variant">Prompt at 8:00 AM every morning</span></div>
+            <button aria-checked="true" class="toggle-control w-12 h-7 rounded-full bg-primary relative p-0.5 transition-colors focus:outline-none" data-toggle="serum" role="switch" type="button"><span class="block w-6 h-6 rounded-full bg-surface-container-lowest shadow transform translate-x-5 transition-transform"></span></button>
+          </div>
+          <div class="flex items-center justify-between pt-space-xs">
+            <div class="flex flex-col pr-space-md"><span class="font-body-md text-body-md text-primary font-medium">Bi-Weekly Clarifying Wash</span><span class="font-body-sm text-body-sm text-on-surface-variant">Wednesdays &amp; Sundays scalp detox alert</span></div>
+            <button aria-checked="true" class="toggle-control w-12 h-7 rounded-full bg-primary relative p-0.5 transition-colors focus:outline-none" data-toggle="wash" role="switch" type="button"><span class="block w-6 h-6 rounded-full bg-surface-container-lowest shadow transform translate-x-5 transition-transform"></span></button>
+          </div>
+        </div>
+      </div>
+      <!-- Privacy & Consent -->
+      <div class="flex flex-col gap-space-sm">
+        <div class="flex items-center gap-space-xs px-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">shield_with_heart</span><h3 class="font-title-md text-title-md text-primary">Medical Privacy &amp; Consent</h3></div>
+        <div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+          <div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-start gap-space-sm">
+            <span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">verified_user</span>
+            <div class="flex flex-col"><span class="font-label-lg text-label-lg text-primary">HIPAA &amp; Nepal Health Data Rule 2080 Compliant</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Your biometric and scalp imaging records are cryptographically partitioned in adherence with national digital health protocols.</span></div>
+          </div>
+          <div class="flex items-center justify-between pt-space-xs">
+            <div class="flex flex-col pr-space-md"><span class="font-body-md text-body-md text-primary font-medium">Anonymized Research &amp; AI Training</span><span class="font-body-sm text-body-sm text-on-surface-variant">Contribute de-identified metrics to improve Himalayan botanical efficacy. Opt out anytime without affecting care.</span></div>
+            <button aria-checked="true" class="toggle-control w-12 h-7 rounded-full bg-primary relative p-0.5 shrink-0 transition-colors focus:outline-none" data-toggle="consent" role="switch" type="button"><span class="block w-6 h-6 rounded-full bg-surface-container-lowest shadow transform translate-x-5 transition-transform"></span></button>
+          </div>
+          <div class="flex flex-col gap-space-xs pt-space-xs">
+            <button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-body-sm text-body-sm font-medium flex items-center justify-between transition-colors" id="exportDataBtn"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">download</span>Export Encrypted Clinical Dossier</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">chevron_right</span></button>
+            <button class="w-full py-2.5 px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-body-sm text-body-sm font-medium flex items-center justify-between transition-colors" id="deleteVaultBtn"><span class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-outline">delete_forever</span>Request Scalp Photo Purge / Deletion</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">chevron_right</span></button>
+          </div>
+        </div>
+      </div>
+      <!-- Security Actions -->
+      <div class="flex flex-col gap-space-xs pt-space-xs">
+        <button class="w-full h-12 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-lg text-label-lg font-medium flex items-center justify-center gap-2 transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">key</span>Update Security Credentials &amp; Biometrics</button>
+        <button class="w-full h-12 rounded-lg bg-surface-container-low hover:bg-error-container/40 text-error font-label-lg text-label-lg font-medium flex items-center justify-center gap-2 transition-colors" id="logoutBtn"><span class="material-symbols-outlined text-[18px]">logout</span>Sign Out of Clinic Session</button>
+        <div class="text-center pt-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant/70 tracking-widest uppercase">Keshara Trichology OS v3.8.4 • Encrypted Session</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- Profile Toast -->
+  <div class="fixed bottom-20 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-space-md py-space-sm rounded-full shadow-xl flex items-center gap-2 opacity-0 pointer-events-none transition-all duration-300 z-50" id="profileToast">
+    <span class="material-symbols-outlined text-[18px] text-secondary-fixed">check_circle</span>
+    <span class="font-body-sm text-body-sm" id="profileToastMsg">Preference saved</span>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== BOTTOM NAVIGATION ==================== -->
+<nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(25,61,50,0.04)]">
+  <div class="flex justify-around items-center h-16 px-space-xs">
+    <button class="nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 text-primary transition-all relative" data-tab="overview" onclick="showTab('overview')">
+      <span class="material-symbols-outlined text-[22px]" style="font-variation-settings:'wght' 600;">dashboard</span>
+      <span class="font-label-sm text-label-sm leading-tight font-semibold">Overview</span>
+      <span class="nav-indicator w-1 h-1 rounded-full bg-primary opacity-100 transition-opacity absolute -bottom-1"></span>
+    </button>
+    <button class="nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-all relative" data-tab="hair-test" onclick="showTab('hair-test')">
+      <span class="material-symbols-outlined text-[22px]">biotech</span>
+      <span class="font-label-sm text-label-sm leading-tight">Hair Test</span>
+      <span class="nav-indicator w-1 h-1 rounded-full bg-primary opacity-0 transition-opacity absolute -bottom-1"></span>
+    </button>
+    <button class="nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-all relative" data-tab="journey" onclick="showTab('journey')">
+      <span class="material-symbols-outlined text-[22px]">calendar_month</span>
+      <span class="font-label-sm text-label-sm leading-tight">Journey</span>
+      <span class="nav-indicator w-1 h-1 rounded-full bg-primary opacity-0 transition-opacity absolute -bottom-1"></span>
+    </button>
+    <button class="nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-all relative" data-tab="shop" onclick="showTab('shop')">
+      <span class="material-symbols-outlined text-[22px]">local_pharmacy</span>
+      <span class="font-label-sm text-label-sm leading-tight">Shop</span>
+      <span class="nav-indicator w-1 h-1 rounded-full bg-primary opacity-0 transition-opacity absolute -bottom-1"></span>
+    </button>
+    <button class="nav-btn flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-all relative" data-tab="profile" onclick="showTab('profile')">
+      <span class="material-symbols-outlined text-[22px]">person</span>
+      <span class="font-label-sm text-label-sm leading-tight">Profile</span>
+      <span class="nav-indicator w-1 h-1 rounded-full bg-primary opacity-0 transition-opacity absolute -bottom-1"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ==================== MODALS ==================== -->
+<!-- Report Modal -->
+<div class="fixed inset-0 z-[60] bg-black/50 backdrop-blur-sm flex items-end justify-center hidden" id="reportModal">
+  <div class="w-full max-w-lg bg-surface rounded-t-2xl p-6 space-y-4 shadow-2xl">
+    <div class="flex items-center justify-between">
+      <h3 class="font-headline-sm text-headline-sm text-primary">Clinical Report</h3>
+      <button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeReportModal()"><span class="material-symbols-outlined text-[18px]">close</span></button>
+    </div>
+    <div class="space-y-3">
+      <div class="p-3 bg-surface-container-low rounded-xl flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-[20px]">verified</span><div><p class="font-title-md text-title-md text-primary">Scalp &amp; Follicle Analysis</p><p class="font-body-sm text-body-sm text-on-surface-variant">Validated Nov 14, 2024</p></div></div>
+      <div class="grid grid-cols-2 gap-2">
+        <div class="p-3 bg-surface-container rounded-lg text-center"><span class="font-metric-val text-metric-val text-primary">+12%</span><p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Follicular Density</p></div>
+        <div class="p-3 bg-surface-container rounded-lg text-center"><span class="font-metric-val text-metric-val text-secondary">78</span><p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Scalp Index</p></div>
+      </div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Mild sebum variance localized at Vertex. Anagen stability index optimal. Recommend continued Phase 2 protocol with increased Bhringraj application frequency.</p>
+    </div>
+    <button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold" onclick="closeReportModal()">Close Report</button>
+  </div>
+</div>
+
+<!-- Inspector Modal -->
+<div class="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm flex items-center justify-center hidden" id="inspectorModal">
+  <div class="w-full max-w-sm bg-surface rounded-2xl p-4 space-y-3 shadow-2xl mx-4">
+    <div class="flex items-center justify-between">
+      <h3 class="font-headline-sm text-headline-sm text-primary" id="inspectorTitle">Scalp View</h3>
+      <button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" onclick="closeInspectorModal()"><span class="material-symbols-outlined text-[18px]">close</span></button>
+    </div>
+    <div class="w-full aspect-square rounded-xl overflow-hidden bg-surface-container-high">
+      <img class="w-full h-full object-cover" id="inspectorImg" src="" alt="Scalp View"/>
+    </div>
+    <div class="flex items-center gap-2 px-2 py-1 bg-surface-container rounded-lg">
+      <span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+      <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Calibrated 420nm Trichoscopy</span>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ALL JAVASCRIPT ==================== -->
+<script>
+// ---- TAB NAVIGATION ----
+const tabTitles = { overview:'Overview', 'hair-test':'Hair Test', journey:'Journey', shop:'Shop', profile:'Profile' };
+function showTab(tab) {
+  document.querySelectorAll('.tab-view').forEach(s => s.classList.remove('active'));
+  const target = document.getElementById('view-' + tab);
+  if (target) target.classList.add('active');
+  document.getElementById('header-title').textContent = tabTitles[tab] || tab;
+  document.querySelectorAll('.nav-btn').forEach(btn => {
+    const isActive = btn.getAttribute('data-tab') === tab;
+    btn.classList.toggle('text-primary', isActive);
+    btn.classList.toggle('text-on-surface-variant', !isActive);
+    const indicator = btn.querySelector('.nav-indicator');
+    if (indicator) indicator.classList.toggle('opacity-100', isActive), indicator.classList.toggle('opacity-0', !isActive);
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (icon) icon.style.fontVariationSettings = isActive ? "'wght' 600" : "'wght' 400";
+    const label = btn.querySelector('.font-label-sm');
+    if (label) label.classList.toggle('font-semibold', isActive);
+  });
+  window.scrollTo(0, 0);
+}
+
+// ---- OVERVIEW: Tasks & Hydration ----
+const taskState = [true, false];
+let hydration = 1.75;
+function toggleTask(idx) {
+  taskState[idx] = !taskState[idx];
+  const check = document.getElementById('task-check-' + idx);
+  const title = document.getElementById('task-title-' + idx);
+  const status = document.getElementById('task-status-' + idx);
+  if (taskState[idx]) {
+    check.classList.add('bg-[#193D32]', 'text-white'); check.classList.remove('border', 'border-[#C6A875]', 'text-transparent');
+    check.textContent = 'check';
+    title.classList.add('line-through', 'text-[#426654]'); title.classList.remove('text-[#193D32]');
+    status.textContent = 'Done'; status.className = 'text-[10px] font-medium text-[#426654]';
+  } else {
+    check.classList.remove('bg-[#193D32]', 'text-white'); check.classList.add('border', 'border-[#C6A875]', 'text-transparent');
+    check.textContent = 'check';
+    title.classList.remove('line-through', 'text-[#426654]'); title.classList.add('text-[#193D32]');
+    status.textContent = 'Pending'; status.className = 'text-[10px] font-medium text-[#C6A875]';
+  }
+  const done = taskState.filter(Boolean).length;
+  const pct = Math.round((done / taskState.length) * 100);
+  const bar = document.getElementById('regimen-progress-bar');
+  const txt = document.getElementById('regimen-completion-text');
+  if (bar) bar.style.width = pct + '%';
+  if (txt) txt.textContent = pct + '%';
+}
+function changeHydration(delta) {
+  hydration = Math.max(0.25, Math.min(4.0, +(hydration + delta).toFixed(2)));
+  const el = document.getElementById('water-val');
+  if (el) el.textContent = hydration.toFixed(2).replace(/\.?0+$/, '') + ' L';
+}
+function openReportModal() { document.getElementById('reportModal').classList.remove('hidden'); }
+function closeReportModal() { document.getElementById('reportModal').classList.add('hidden'); }
+const inspectorImages = [
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuAwQHebG91sLjcvCaEyhOGY8LvsN4KVPCMDEIiXY5-PM9X02QN5VcF_iVXCo1_LIrv9jnzyOSrkgC08iriUaBXPzfZHLuRhiZgUsSlaIALweprIc3W891iQ7t8t3tYV1TD6bAj0Z4rct2Us-QENYKiWW2SfKySkp6_8uJk4Ax3zJB_s--gDZWvKzgJmFTOUmaSo07uzbWgHB4iY_aEkH23S2qQ3OmYus1a6GQ2SZJE',
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuAwxS8E9gIwIMkP13ToUlbhrruYbRlE7WUfxTZPgNlDOE1e7Mug11g24QQKuP-3hDbhFjDRjAESANTByFJfr-eQLzGZjhf_VwEMSyr0WHlp_ghskvKafNFydc6S_SkOfNT6zt-lpKd-glz7sXRvbpagjS3984lqf5CXgqJFVmhJYRNw7r0SJDwenWoDUMlgmtHSZGKgVPYQe7UIAjUZMrih6miWQ0QpPNQWWlv2tms',
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuDo87PIwLRE23Dvf9eD1QgfNSERkcaEhY2cvatRsaK6Lo5Ra6Q9uWrHU4qa7ho3a_6oIWL4nhfj22msOAB7tWaN1oc5AjPEbJ9Ed44xU-cKfLnh3PJfZ8QTMMOjlsKOEqdm25R29-Ypp7hCYkEOgHcQ-V2X9VUwakLmqFi3xt6BeZA-OG8iE3-dFmHlX_KXzNGNPjXMTCVTAWNnnMTqoQQtpDn8MOHdCSYO2B55KUc',
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuBbZXQzOt2XLj0U0W4OhoQqtSrXLV82nMXT-GZQRR1t-Rexf3nkWtmzNsQZdqL6QGdZbNPww2J4iE1qgTXGB0BfT-9banOg5DNurS86joeXg0dly295dBFFkFFz3KGA3dwAIW37USzBV8MONdC2CyoGJOkVxqx1eXFuslwPwcuq5DTbqcMkYwe5Q8KHSS09aUmiQKdTTOePR7UDRQJPTxC9WAx6NkcW_jz5BK3kOnA',
+  'https://lh3.googleusercontent.com/aida-public/AB6AXuADJs8xtyjqGNbzIu_f-uQN-OovM2ts93tDNlTcTO8ykH13cuHpvz1UvPN3uLpAVdzImb5qvmqJIROaToR-URHPWPcX-1KcFV8ilqfITubLiVduXn3zs2voPsm5AA_74ezy_5qIxAB1TpO05qTpQrbLc2aVbPbZRN61c9dtSwOENGEcFle8kZ4gHXQ5hIrCPzKFOFLq3ug8ki5WSNOZgHV7PqClDmDMo2-L3Ak1FdY'
+];
+const inspectorTitles = ['Front Hairline','Top Parting','Crown Vertex','Left Temple','Right Temple'];
+function openInspectorModal(idx) {
+  document.getElementById('inspectorImg').src = inspectorImages[idx];
+  document.getElementById('inspectorTitle').textContent = inspectorTitles[idx];
+  document.getElementById('inspectorModal').classList.remove('hidden');
+}
+function closeInspectorModal() { document.getElementById('inspectorModal').classList.add('hidden'); }
+
+// ---- HAIR TEST ----
+document.querySelectorAll('.selectable-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const sel = card.classList.contains('bg-primary');
+    const icon = card.querySelector('.indicator-icon');
+    if (sel) {
+      card.classList.remove('bg-primary','text-on-primary');
+      card.classList.add('bg-surface-container');
+      card.querySelector('h4').classList.replace('text-on-primary','text-on-surface');
+      card.querySelector('span.block').classList.replace('text-primary-fixed','text-on-surface-variant');
+      if (icon) { icon.innerHTML=''; icon.classList.replace('bg-tertiary-fixed','bg-surface-container-high'); icon.classList.remove('text-on-tertiary-fixed'); }
+    } else {
+      card.classList.remove('bg-surface-container');
+      card.classList.add('bg-primary','text-on-primary');
+      card.querySelector('h4').classList.replace('text-on-surface','text-on-primary');
+      card.querySelector('span.block').classList.replace('text-on-surface-variant','text-primary-fixed');
+      if (icon) { icon.innerHTML='<span class="material-symbols-outlined text-[12px] font-bold">check</span>'; icon.classList.replace('bg-surface-container-high','bg-tertiary-fixed'); icon.classList.add('text-on-tertiary-fixed'); }
+    }
+    updateTestValidation();
+  });
+});
+document.querySelectorAll('.symptom-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    const active = pill.classList.contains('bg-secondary');
+    if (active) { pill.classList.remove('bg-secondary','text-on-secondary'); pill.classList.add('bg-surface-container','text-on-surface'); const ic=pill.querySelector('.material-symbols-outlined'); if(ic){ic.classList.remove('text-on-secondary');ic.classList.add('text-secondary');} }
+    else { pill.classList.remove('bg-surface-container','text-on-surface'); pill.classList.add('bg-secondary','text-on-secondary'); const ic=pill.querySelector('.material-symbols-outlined'); if(ic){ic.classList.remove('text-secondary');ic.classList.add('text-on-secondary');} }
+    updateTestValidation();
+  });
+});
+document.querySelectorAll('#sleep-buttons .telemetry-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#sleep-buttons .telemetry-btn').forEach(b => { b.classList.remove('bg-primary','text-on-primary','font-semibold'); b.classList.add('bg-surface','text-on-surface-variant'); });
+    btn.classList.remove('bg-surface','text-on-surface-variant'); btn.classList.add('bg-primary','text-on-primary','font-semibold');
+    const lbl = document.getElementById('sleep-label'); if(lbl) lbl.textContent = btn.getAttribute('data-val');
+  });
+});
+const stressRange = document.getElementById('stress-range');
+if (stressRange) {
+  const stressLabels = ['Calm / Minimal','Mild','Moderate','High Stress','Severe / Acute'];
+  stressRange.addEventListener('input', e => { const idx = Math.max(0,Math.min(4,parseInt(e.target.value,10)-1)); const el=document.getElementById('stress-level-text'); if(el) el.textContent=stressLabels[idx]; });
+}
+let testWater = 2.0;
+const testWaterDisplay = document.getElementById('test-water-count');
+const twInc = document.getElementById('test-water-increase');
+const twDec = document.getElementById('test-water-decrease');
+if (twInc) twInc.addEventListener('click', () => { if(testWater<4.5){testWater=+(testWater+0.25).toFixed(2); if(testWaterDisplay) testWaterDisplay.textContent=testWater.toFixed(1)+' L';} });
+if (twDec) twDec.addEventListener('click', () => { if(testWater>0.5){testWater=+(testWater-0.25).toFixed(2); if(testWaterDisplay) testWaterDisplay.textContent=testWater.toFixed(1)+' L';} });
+function updateTestValidation() {
+  const c = document.querySelectorAll('.selectable-card.bg-primary').length;
+  const p = document.querySelectorAll('.symptom-pill.bg-secondary').length;
+  const toast = document.getElementById('validation-note');
+  if (!toast) return;
+  if (c>0||p>0) { toast.classList.remove('hidden'); toast.textContent=`Trichology telemetry: ${c} concern(s) & ${p} scalp marker(s) logged`; }
+  else { toast.classList.add('hidden'); }
+}
+const submitBtn = document.getElementById('submit-btn');
+if (submitBtn) {
+  submitBtn.addEventListener('click', () => {
+    submitBtn.textContent = '✓ Assessment Saved';
+    submitBtn.classList.add('bg-secondary');
+    setTimeout(() => { submitBtn.innerHTML = '<span>Save &amp; Continue to Lifestyle</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>'; submitBtn.classList.remove('bg-secondary'); }, 2000);
+  });
+}
+
+// ---- JOURNEY ----
+const dermZoomSlider = document.getElementById('dermZoomSlider');
+const zoomDisplay = document.getElementById('zoomDisplay');
+const imgBaseline = document.getElementById('imgBaseline');
+const imgWeek6 = document.getElementById('imgWeek6');
+if (dermZoomSlider) {
+  dermZoomSlider.addEventListener('input', e => {
+    const z = parseFloat(e.target.value).toFixed(1);
+    if(zoomDisplay) zoomDisplay.textContent = z + 'x';
+    if(imgBaseline) imgBaseline.style.transform = 'scale(' + z + ')';
+    if(imgWeek6) imgWeek6.style.transform = 'scale(' + z + ')';
+  });
+}
+const zoneImages = {
+  front: { baseline:'https://lh3.googleusercontent.com/aida-public/AB6AXuCNgHcrFhxvmUV-Tv1jDJvcWmpqem8a-QlXt8S9YpHM5IFFULfFM931_IEB68P8Szhq6fRVvByqGn5_hnN5oaTEJ9MvnuJRdcUFEgUDe6C7dKRExSW-qewwuKJnUmfcEt2g4PkO9Uqa7OSx4-yuxwUxEoySLFFs0lQvQddY45x1a8ue9u17vedlRNHFOOAB0jQalR5mv3boNO6EpfFJq1Nk4yXuykdryNspmn1s-EU', week6:'https://lh3.googleusercontent.com/aida-public/AB6AXuDB7QbxEd937wvsN9GJHPZvjIlUwR7p24Cg6E6biH0vpk_G1ySdnix7WqiUMYeHc7kgL6Z1DuTMIN42Qk1EA9KW__LYhAy8bDvUxtloawhEeu3DiPTTUuWRadoFwC56KvLWP1RuWa05ttB7pHoyjNp1ACTBtuagqADeFc9_AEu5tuNrqoNCL8oZY_evgcvUtkW-zUbeBk7csHhouhltlijEKZngnDfKHnOKADC3QmM' },
+  crown: { baseline:'https://lh3.googleusercontent.com/aida-public/AB6AXuAwxS8E9gIwIMkP13ToUlbhrruYbRlE7WUfxTZPgNlDOE1e7Mug11g24QQKuP-3hDbhFjDRjAESANTByFJfr-eQLzGZjhf_VwEMSyr0WHlp_ghskvKafNFydc6S_SkOfNT6zt-lpKd-glz7sXRvbpagjS3984lqf5CXgqJFVmhJYRNw7r0SJDwenWoDUMlgmtHSZGKgVPYQe7UIAjUZMrih6miWQ0QpPNQWWlv2tms', week6:'https://lh3.googleusercontent.com/aida-public/AB6AXuDo87PIwLRE23Dvf9eD1QgfNSERkcaEhY2cvatRsaK6Lo5Ra6Q9uWrHU4qa7ho3a_6oIWL4nhfj22msOAB7tWaN1oc5AjPEbJ9Ed44xU-cKfLnh3PJfZ8QTMMOjlsKOEqdm25R29-Ypp7hCYkEOgHcQ-V2X9VUwakLmqFi3xt6BeZA-OG8iE3-dFmHlX_KXzNGNPjXMTCVTAWNnnMTqoQQtpDn8MOHdCSYO2B55KUc' }
+};
+function setZone(zone) {
+  const fb = document.getElementById('zoneFrontBtn'), cb = document.getElementById('zoneCrownBtn');
+  if(zone==='front'){fb.classList.add('bg-surface-container-lowest','text-primary','shadow-sm');fb.classList.remove('text-on-surface-variant');cb.classList.remove('bg-surface-container-lowest','text-primary','shadow-sm');cb.classList.add('text-on-surface-variant');}
+  else{cb.classList.add('bg-surface-container-lowest','text-primary','shadow-sm');cb.classList.remove('text-on-surface-variant');fb.classList.remove('bg-surface-container-lowest','text-primary','shadow-sm');fb.classList.add('text-on-surface-variant');}
+  if(imgBaseline) imgBaseline.src = zoneImages[zone].baseline;
+  if(imgWeek6) imgWeek6.src = zoneImages[zone].week6;
+}
+function toggleCalendarDot(btn) {
+  const dot = btn.querySelector('.rounded-full:last-child');
+  if(!dot) return;
+  dot.classList.toggle('bg-secondary', !dot.classList.contains('bg-secondary'));
+  dot.classList.toggle('bg-surface-container-highest', !dot.classList.contains('bg-secondary'));
+}
+function toggleTag(btn) {
+  const active = btn.classList.contains('bg-secondary-container');
+  if(active){btn.classList.remove('bg-secondary-container','text-on-secondary-container');btn.classList.add('bg-surface-container-lowest','text-on-surface-variant');}
+  else{btn.classList.remove('bg-surface-container-lowest','text-on-surface-variant');btn.classList.add('bg-secondary-container','text-on-secondary-container');}
+}
+function showJourneyToast(msg) {
+  const t=document.getElementById('journeyToast'), m=document.getElementById('journeyToastMsg');
+  if(!t||!m) return; m.textContent=msg; t.classList.remove('opacity-0','pointer-events-none'); t.classList.add('opacity-100');
+  setTimeout(()=>{t.classList.remove('opacity-100');t.classList.add('opacity-0','pointer-events-none');},2500);
+}
+const dlBtn = document.getElementById('downloadDossierBtn');
+if(dlBtn) dlBtn.addEventListener('click',()=>showJourneyToast('Clinical Progress Dossier compiled & ready'));
+const saveNoteBtn = document.getElementById('saveNoteBtn');
+if(saveNoteBtn) saveNoteBtn.addEventListener('click',()=>showJourneyToast('Scalp observation saved to journal'));
+const logWashBtn = document.getElementById('logWashBtn');
+if(logWashBtn) logWashBtn.addEventListener('click',()=>{logWashBtn.textContent='✓ Logged';logWashBtn.classList.add('bg-secondary-container','text-on-secondary-container');showJourneyToast('Botanical wash logged');});
+
+// ---- SHOP CART ----
+(function initShop() {
+  const cart = { p1:0, p2:0, p3:0, p4:0 };
+  const prices = { p1:2450, p2:1850, p3:3200, p4:2950 };
+  const cartBar = document.getElementById('cart-quick-bar');
+  const cartBadge = document.getElementById('cart-count-badge');
+  const cartTotal = document.getElementById('cart-total-text');
+  function updateCartUI() {
+    let qty=0, total=0;
+    Object.keys(cart).forEach(id=>{qty+=cart[id];total+=cart[id]*prices[id];
+      const ac=document.getElementById('action-'+id); if(!ac) return;
+      if(cart[id]===0){ ac.innerHTML=`<button class="add-to-bag-btn px-4 h-10 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" data-id="${id}"><span class="material-symbols-outlined text-[16px]">add_shopping_cart</span><span>Add to Bag</span></button>`; }
+      else{ ac.innerHTML=`<div class="flex items-center bg-surface-container rounded-lg p-0.5 shadow-inner"><button class="qty-btn-minus w-8 h-8 rounded-md bg-surface flex items-center justify-center text-primary active:scale-90 transition-transform" data-id="${id}"><span class="material-symbols-outlined text-[16px]">${cart[id]===1?'delete':'remove'}</span></button><span class="w-8 text-center font-metric-val text-label-lg text-primary">${cart[id]}</span><button class="qty-btn-plus w-8 h-8 rounded-md bg-primary text-on-primary flex items-center justify-center active:scale-90 transition-transform" data-id="${id}"><span class="material-symbols-outlined text-[16px]">add</span></button></div>`; }
+    });
+    if(cartBadge) cartBadge.textContent=qty;
+    if(cartTotal) cartTotal.textContent='NPR '+total.toLocaleString();
+    if(cartBar){
+      if(qty>0){cartBar.classList.remove('translate-y-32','opacity-0','pointer-events-none');cartBar.classList.add('translate-y-0','opacity-100');}
+      else{cartBar.classList.remove('translate-y-0','opacity-100');cartBar.classList.add('translate-y-32','opacity-0','pointer-events-none');}
+    }
+  }
+  document.addEventListener('click', e => {
+    const add=e.target.closest('.add-to-bag-btn'); if(add){const id=add.getAttribute('data-id');cart[id]=1;updateCartUI();return;}
+    const plus=e.target.closest('.qty-btn-plus'); if(plus){const id=plus.getAttribute('data-id');cart[id]+=1;updateCartUI();return;}
+    const minus=e.target.closest('.qty-btn-minus'); if(minus){const id=minus.getAttribute('data-id');if(cart[id]>0){cart[id]-=1;updateCartUI();}return;}
+  });
+  // Category filtering
+  document.querySelectorAll('.category-pill').forEach(pill=>{
+    pill.addEventListener('click',()=>{
+      document.querySelectorAll('.category-pill').forEach(p=>{p.classList.remove('bg-primary','text-on-primary');p.classList.add('bg-surface-container','text-on-surface-variant');});
+      pill.classList.remove('bg-surface-container','text-on-surface-variant'); pill.classList.add('bg-primary','text-on-primary');
+      const filter=pill.getAttribute('data-category');
+      document.querySelectorAll('.product-item').forEach(item=>{item.style.display=(filter==='all'||item.getAttribute('data-category')===filter)?'block':'none';});
+    });
+  });
+  // Search filtering
+  const searchInput=document.getElementById('apothecary-search');
+  if(searchInput){ searchInput.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim(); document.querySelectorAll('.product-item').forEach(item=>{item.style.display=item.innerText.toLowerCase().includes(q)?'block':'none';}); }); }
+  updateCartUI();
+})();
+
+// ---- PROFILE ----
+(function initProfile() {
+  function showProfileToast(msg) {
+    const t=document.getElementById('profileToast'), m=document.getElementById('profileToastMsg');
+    if(!t||!m) return; m.textContent=msg; t.classList.remove('opacity-0','pointer-events-none','translate-y-2'); t.classList.add('opacity-100','translate-y-0');
+    setTimeout(()=>{t.classList.remove('opacity-100','translate-y-0');t.classList.add('opacity-0','pointer-events-none','translate-y-2');},2600);
+  }
+  document.querySelectorAll('.toggle-control').forEach(toggle=>{
+    toggle.addEventListener('click',function(){
+      const isChecked=this.getAttribute('aria-checked')==='true';
+      const next=!isChecked; this.setAttribute('aria-checked',String(next));
+      const knob=this.querySelector('span');
+      if(next){this.classList.remove('bg-surface-container-highest');this.classList.add('bg-primary');knob.classList.remove('translate-x-0.5');knob.classList.add('translate-x-5');showProfileToast('Setting activated');}
+      else{this.classList.remove('bg-primary');this.classList.add('bg-surface-container-highest');knob.classList.remove('translate-x-5');knob.classList.add('translate-x-0.5');showProfileToast('Setting disabled');}
+    });
+  });
+  const rptBtn=document.getElementById('viewReportBtn'); if(rptBtn) rptBtn.addEventListener('click',()=>showProfileToast('Opening Nov 14 Trichology Report (PDF)...'));
+  const expBtn=document.getElementById('exportDataBtn'); if(expBtn) expBtn.addEventListener('click',()=>showProfileToast('Preparing medical dossier export...'));
+  const delBtn=document.getElementById('deleteVaultBtn'); if(delBtn) delBtn.addEventListener('click',()=>showProfileToast('Deletion request submitted to Data Officer'));
+  const lgBtn=document.getElementById('logoutBtn'); if(lgBtn) lgBtn.addEventListener('click',()=>showProfileToast('Logging out of secure patient profile...'));
+})();
+</script>
+</body>
+</html>
